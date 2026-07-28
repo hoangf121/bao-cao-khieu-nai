@@ -1,0 +1,267 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Báo cáo Khiếu nại sàn — Shopee &amp; TikTok</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#f5f6fa;color:#222;font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.55;}
+  .wrap{max-width:1060px;margin:0 auto;padding:26px 20px 60px;}
+  h1{color:#1a3a6c;font-size:27px;margin:0 0 4px;font-weight:800;}
+  .meta{color:#5a6472;font-size:13.5px;margin:0 0 4px;}
+  .rule{height:3px;background:#1a3a6c;border-radius:3px;margin:16px 0 6px;}
+  .plat-sec{margin-top:40px;}
+  h2{font-size:21px;margin:0 0 16px;display:flex;align-items:center;gap:11px;color:#1a3a6c;}
+  h2 .badge{font-size:12px;font-weight:800;color:#fff;border-radius:999px;padding:3px 12px;}
+  h2 .pn{font-weight:800;}
+  h3.lh{color:#1a3a6c;font-size:15px;margin:22px 0 10px;}
+  .cards5{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;}
+  @media(max-width:760px){.cards5{grid-template-columns:repeat(2,1fr);}}
+  .card{background:#fff;border-radius:10px;padding:14px 16px;border-left:4px solid #1a3a6c;box-shadow:0 1px 3px rgba(26,58,108,.08);}
+  .card .lbl{font-size:12px;color:#5a6472;font-weight:600;text-transform:uppercase;letter-spacing:.03em;}
+  .card .num{font-size:27px;font-weight:800;margin-top:5px;line-height:1;color:#1a3a6c;font-variant-numeric:tabular-nums;}
+  .card .sub2{font-size:11px;color:#8b95a3;margin-top:4px;}
+  .card.ok{border-left-color:#2e7d32;} .card.ok .num{color:#2e7d32;}
+  .card.bad{border-left-color:#c62828;} .card.bad .num{color:#c62828;}
+  .card.muted{border-left-color:#9aa4b1;} .card.muted .num{color:#6b7684;}
+  .card.pend{border-left-color:#f9a825;} .card.pend .num{color:#c07a12;}
+  .ratewrap{display:grid;grid-template-columns:1.1fr 1fr;gap:14px;margin-top:14px;}
+  @media(max-width:760px){.ratewrap{grid-template-columns:1fr;}}
+  .ratebig{background:#fff;border-radius:10px;padding:16px 18px;box-shadow:0 1px 3px rgba(26,58,108,.08);border-top:4px solid #1a3a6c;}
+  .ratebig .rlbl{font-size:12.5px;color:#5a6472;font-weight:700;text-transform:uppercase;letter-spacing:.03em;}
+  .ratebig .rval{font-size:40px;font-weight:800;line-height:1;margin:6px 0 4px;font-variant-numeric:tabular-nums;}
+  .rbar{height:9px;border-radius:6px;background:#eceff3;overflow:hidden;margin:8px 0 6px;}
+  .rbar>span{display:block;height:100%;border-radius:6px;}
+  .rsub{font-size:12px;color:#8b95a3;}
+  .ratemini{background:#f7f9fc;border:1px dashed #cdd6e2;border-radius:10px;padding:16px 18px;}
+  .ratemini .rlbl{font-size:12px;color:#5a6472;font-weight:700;text-transform:uppercase;letter-spacing:.03em;}
+  .ratemini .rval2{font-size:26px;font-weight:800;color:#1a3a6c;margin:5px 0 4px;font-variant-numeric:tabular-nums;}
+  .cmp2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:9px 0 8px;}
+  .cmpcard{background:#fff;border-radius:9px;padding:11px 13px;border-left:4px solid #1a3a6c;box-shadow:0 1px 3px rgba(26,58,108,.08);}
+  .cmpcard .cl{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;}
+  .cmpcard .cv{font-size:24px;font-weight:800;line-height:1;margin:5px 0 4px;font-variant-numeric:tabular-nums;}
+  .cmpcard .cs{font-size:11.5px;color:#8b95a3;font-variant-numeric:tabular-nums;}
+  .cmpcard .up{color:#2e7d32;font-weight:800;}
+  .cmpcard.sp{border-left-color:#ee4d2d;} .cmpcard.sp .cl,.cmpcard.sp .cv{color:#ee4d2d;}
+  .cmpcard.tk{border-left-color:#000;} .cmpcard.tk .cl,.cmpcard.tk .cv{color:#000;}
+  .tbl-wrap{overflow-x:auto;background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(26,58,108,.08);}
+  table{border-collapse:collapse;width:100%;font-size:13px;min-width:560px;}
+  th,td{padding:9px 13px;text-align:left;border-bottom:1px solid #eceff3;}
+  thead th{background:#1a3a6c;color:#fff;font-size:11.5px;text-transform:uppercase;letter-spacing:.03em;font-weight:700;}
+  tbody tr:last-child td{border-bottom:0;}
+  tbody tr:hover{background:#f7f9fc;}
+  tbody tr.totalrow{background:#f2f5fa;font-weight:800;}
+  tbody tr.totalrow:hover{background:#f2f5fa;}
+  td.mono{font-family:Consolas,"Courier New",monospace;font-size:12.5px;}
+  td.r{color:#c62828;font-size:12px;}
+  td.n{text-align:right;font-variant-numeric:tabular-nums;}
+  th.n{text-align:right;}
+  .tag{font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px;display:inline-block;white-space:nowrap;}
+  .tag.ok{background:#e5f3e6;color:#2e7d32;} .tag.bad{background:#fbe4e4;color:#c62828;}
+  .tag.muted{background:#eef1f4;color:#6b7684;} .tag.pend{background:#fdf1d8;color:#a86a00;}
+  .fcause-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  @media(max-width:760px){.fcause-grid{grid-template-columns:1fr;}}
+  .fcause{background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(26,58,108,.08);overflow:hidden;border-top:3px solid #c62828;}
+  .fcause h4{margin:0;padding:12px 15px;font-size:14px;color:#1a3a6c;display:flex;justify-content:space-between;align-items:center;gap:10px;background:#fbf1f1;border-bottom:1px solid #f3dede;}
+  .fcause h4 .fcount{font-size:12px;font-weight:800;color:#fff;background:#c62828;border-radius:999px;padding:2px 10px;white-space:nowrap;}
+  .fc-list{padding:6px 0;}
+  .fc-item{display:flex;align-items:center;gap:10px;padding:7px 15px;border-bottom:1px solid #f4f6f8;}
+  .fc-item:last-child{border-bottom:0;}
+  .fc-day{color:#8b95a3;font-size:11.5px;min-width:40px;}
+  .mono2{font-family:Consolas,"Courier New",monospace;font-size:12.5px;color:#222;}
+  .tag.tk-p{background:#000;color:#fff;} .tag.sp-p{background:#ee4d2d;color:#fff;} .tag.lz-p{background:#0f146e;color:#fff;}
+  .note{background:#fffbea;border:1px solid #f6e2a0;border-left:5px solid #f9a825;border-radius:10px;padding:16px 18px;margin-top:40px;}
+  .note h3{margin:0 0 6px;color:#a86a00;font-size:15px;} .note p{margin:4px 0;font-size:13.5px;color:#6b5a20;} .note b{color:#7a4d00;}
+  .footer{margin-top:30px;padding-top:14px;border-top:1px solid #dfe3ea;font-size:12px;color:#8b95a3;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Báo cáo Khiếu nại sàn</h1>
+  <p class="meta">Kỳ báo cáo: <b>20/07 – 25/07/2026</b> (Thứ 2 – Thứ 7) · Kho 170 Quốc Lộ 1A</p>
+  <p class="meta"><b>Quy ước:</b> Đền bù 1 phần được tính là <b style="color:#c62828">Thất bại</b> (kỳ này không phát sinh đơn đền bù). Tỉ lệ thành công = Thành công ÷ số đơn <b>có phát sinh khiếu nại đã có kết quả</b> (thành công + thất bại) — không tính đơn "không cần KN" và "đang xử lý".</p>
+  <div class="rule"></div>
+
+  <section class="plat-sec" style="margin-top:24px">
+    <h2><span class="badge" style="background:#1a3a6c">TỔNG</span><span>Cả 2 sàn</span></h2>
+    <div class="cards5">
+      <div class="card"><div class="lbl">Tổng đơn KN</div><div class="num">275</div><div class="sub2">Shopee 164 · TikTok 110 · khác 1</div></div>
+      <div class="card ok"><div class="lbl">Thành công</div><div class="num">202</div></div>
+      <div class="card bad"><div class="lbl">Thất bại*</div><div class="num">8</div><div class="sub2">TB 8 + Đền bù 0</div></div>
+      <div class="card muted"><div class="lbl">Không cần KN</div><div class="num">2</div></div>
+      <div class="card pend"><div class="lbl">Đang xử lý</div><div class="num">63</div></div>
+    </div>
+    <div class="ratewrap">
+      <div class="ratebig">
+        <div class="rlbl">Tỉ lệ thành công (đơn có phát sinh khiếu nại)</div>
+        <div class="rval" style="color:#1a3a6c">96.19%</div>
+        <div class="rbar"><span style="width:96.19%;background:#1a3a6c"></span></div>
+        <div class="rsub">202 thành công / 210 đơn đã có kết quả (thành công + thất bại)</div>
+      </div>
+      <div class="ratemini">
+        <div class="rlbl">So với tuần (13–19/07)</div>
+        <div class="cmp2">
+          <div class="cmpcard sp">
+            <div class="cl">Shopee</div>
+            <div class="cv">98.36%</div>
+            <div class="cs">97.16% <span class="up">▲ 1.20</span></div>
+          </div>
+          <div class="cmpcard tk">
+            <div class="cl">TikTok</div>
+            <div class="cv">93.18%</div>
+            <div class="cs">89.89% <span class="up">▲ 3.29</span></div>
+          </div>
+        </div>
+        <div class="rsub">Cả 2 sàn đều cải thiện; số đơn thất bại giảm từ 13 → <b>8</b>.</div>
+      </div>
+    </div>
+
+    <h3 class="lh">Diễn biến theo ngày</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Ngày</th><th>Thứ</th><th class="n">Tổng đơn KN</th><th class="n">Thành công</th><th class="n">Thất bại</th><th class="n">Không cần KN</th><th class="n">Đang xử lý</th><th class="n">Tỉ lệ TC</th></tr></thead>
+        <tbody>
+          <tr><td>20/07</td><td>Thứ 2</td><td class="n">20</td><td class="n">18</td><td class="n">0</td><td class="n">1</td><td class="n">1</td><td class="n">100.00%</td></tr>
+          <tr><td>21/07</td><td>Thứ 3</td><td class="n">62</td><td class="n">56</td><td class="n">1</td><td class="n">0</td><td class="n">5</td><td class="n">98.25%</td></tr>
+          <tr><td>22/07</td><td>Thứ 4</td><td class="n">43</td><td class="n">34</td><td class="n">3</td><td class="n">1</td><td class="n">5</td><td class="n">91.89%</td></tr>
+          <tr><td>23/07</td><td>Thứ 5</td><td class="n">54</td><td class="n">39</td><td class="n">0</td><td class="n">0</td><td class="n">15</td><td class="n">100.00%</td></tr>
+          <tr><td>24/07</td><td>Thứ 6</td><td class="n">54</td><td class="n">35</td><td class="n">1</td><td class="n">0</td><td class="n">18</td><td class="n">97.22%</td></tr>
+          <tr><td>25/07</td><td>Thứ 7</td><td class="n">42</td><td class="n">20</td><td class="n">3</td><td class="n">0</td><td class="n">19</td><td class="n">86.96%</td></tr>
+          <tr class="totalrow"><td>Tổng tuần</td><td></td><td class="n">275</td><td class="n">202</td><td class="n">8</td><td class="n">2</td><td class="n">63</td><td class="n">96.19%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="plat-sec">
+    <h2><span class="badge" style="background:#c62828">1</span><span style="color:#c62828">Tổng hợp đơn thất bại — cả 2 sàn</span></h2>
+    <p class="meta"><b>8 đơn</b> thất bại trong kỳ (Shopee 2 · TikTok 6, không có đơn đền bù 1 phần) — nhóm theo nguyên nhân, kèm mã đơn từng nguyên nhân.</p>
+    <div class="fcause-grid">
+      <div class="fcause">
+        <h4><span>Chưa chứng minh nguyên vẹn</span><span class="fcount">4 đơn</span></h4>
+        <div class="fc-list">
+          <div class="fc-item"><span class="tag sp-p">SHOPEE</span><span class="fc-day">22/07</span><span class="mono2">SPXVN061553003597</span></div>
+          <div class="fc-item"><span class="tag tk-p">TIKTOK</span><span class="fc-day">22/07</span><span class="mono2">854151934251</span></div>
+          <div class="fc-item"><span class="tag tk-p">TIKTOK</span><span class="fc-day">24/07</span><span class="mono2">854151151957</span></div>
+          <div class="fc-item"><span class="tag tk-p">TIKTOK</span><span class="fc-day">25/07</span><span class="mono2">854151060290</span></div>
+        </div>
+      </div>
+      <div class="fcause">
+        <h4><span>Vô lý</span><span class="fcount">3 đơn</span></h4>
+        <div class="fc-list">
+          <div class="fc-item"><span class="tag tk-p">TIKTOK</span><span class="fc-day">22/07</span><span class="mono2">854151903162</span></div>
+          <div class="fc-item"><span class="tag sp-p">SHOPEE</span><span class="fc-day">25/07</span><span class="mono2">SPXVN065949221187</span></div>
+          <div class="fc-item"><span class="tag tk-p">TIKTOK</span><span class="fc-day">25/07</span><span class="mono2">VTPVN9041648510</span></div>
+        </div>
+      </div>
+      <div class="fcause">
+        <h4><span>ĐG sai quy cách</span><span class="fcount">1 đơn</span></h4>
+        <div class="fc-list">
+          <div class="fc-item"><span class="tag tk-p">TIKTOK</span><span class="fc-day">21/07</span><span class="mono2">854151321833</span></div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="lh">Chi tiết 8 đơn thất bại</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Sàn</th><th>Ngày tạo</th><th>Tracking</th><th>Nguyên nhân</th><th>Ngày chốt KQ</th><th>Người tạo</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td><span class="tag tk-p">TIKTOK</span></td><td>21/07</td><td class="mono">854151321833</td><td class="r">ĐG sai quy cách</td><td>22/07</td><td>huyenltn1@hasaki.vn</td></tr>
+          <tr><td>2</td><td><span class="tag sp-p">SHOPEE</span></td><td>22/07</td><td class="mono">SPXVN061553003597</td><td class="r">Chưa chứng minh nguyên vẹn</td><td>24/07</td><td>uyenhnt@hasaki.vn</td></tr>
+          <tr><td>3</td><td><span class="tag tk-p">TIKTOK</span></td><td>22/07</td><td class="mono">854151903162</td><td class="r">Vô lý</td><td>26/07</td><td>uyenhnt@hasaki.vn</td></tr>
+          <tr><td>4</td><td><span class="tag tk-p">TIKTOK</span></td><td>22/07</td><td class="mono">854151934251</td><td class="r">Chưa chứng minh nguyên vẹn</td><td>27/07</td><td>uyenhnt@hasaki.vn</td></tr>
+          <tr><td>5</td><td><span class="tag tk-p">TIKTOK</span></td><td>24/07</td><td class="mono">854151151957</td><td class="r">Chưa chứng minh nguyên vẹn</td><td>26/07</td><td>uyenhnt@hasaki.vn</td></tr>
+          <tr><td>6</td><td><span class="tag sp-p">SHOPEE</span></td><td>25/07</td><td class="mono">SPXVN065949221187</td><td class="r">Vô lý</td><td>25/07</td><td>uyenhnt@hasaki.vn</td></tr>
+          <tr><td>7</td><td><span class="tag tk-p">TIKTOK</span></td><td>25/07</td><td class="mono">VTPVN9041648510</td><td class="r">Vô lý</td><td>26/07</td><td>uyenhnt@hasaki.vn</td></tr>
+          <tr><td>8</td><td><span class="tag tk-p">TIKTOK</span></td><td>25/07</td><td class="mono">854151060290</td><td class="r">Chưa chứng minh nguyên vẹn</td><td>27/07</td><td>uyenhnt@hasaki.vn</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="plat-sec">
+    <h2><span class="badge" style="background:#ee4d2d">2</span><span class="pn" style="color:#ee4d2d">SHOPEE</span> — Tổng quan</h2>
+    <div class="cards5">
+      <div class="card" style="border-left-color:#ee4d2d"><div class="lbl">Tổng đơn KN</div><div class="num" style="color:#ee4d2d">164</div></div>
+      <div class="card ok"><div class="lbl">Thành công</div><div class="num">120</div></div>
+      <div class="card bad"><div class="lbl">Thất bại*</div><div class="num">2</div><div class="sub2">TB 2 + Đền bù 0</div></div>
+      <div class="card muted"><div class="lbl">Không cần KN</div><div class="num">2</div></div>
+      <div class="card pend"><div class="lbl">Đang xử lý</div><div class="num">40</div></div>
+    </div>
+    <div class="ratewrap">
+      <div class="ratebig" style="border-top-color:#ee4d2d">
+        <div class="rlbl">Tỉ lệ thành công (đơn có phát sinh khiếu nại)</div>
+        <div class="rval" style="color:#ee4d2d">98.36%</div>
+        <div class="rbar"><span style="width:98.36%;background:#ee4d2d"></span></div>
+        <div class="rsub">120 thành công / 122 đơn đã có kết quả (thành công + thất bại)</div>
+      </div>
+      <div class="ratemini">
+        <div class="rlbl">Cơ cấu đơn có phát sinh khiếu nại</div>
+        <div class="rval2">122 đơn có KQ</div>
+        <div class="rsub">Thành công <b>120</b> · Thất bại <b>2</b> (TB 2 + đền bù 0).<br>Không tính vào tỉ lệ: 40 đang xử lý, 2 không cần KN.</div>
+      </div>
+    </div>
+    <h3 class="lh">Chi tiết đơn thất bại — SHOPEE (2 đơn)</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Ngày tạo</th><th>Tracking</th><th>Kết quả</th><th>Lý do</th><th>Ngày chốt KQ</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>22/07</td><td class="mono">SPXVN061553003597</td><td><span class="tag bad">Thất bại</span></td><td class="r">Chưa chứng minh nguyên vẹn</td><td>24/07</td></tr>
+          <tr><td>2</td><td>25/07</td><td class="mono">SPXVN065949221187</td><td><span class="tag bad">Thất bại</span></td><td class="r">Vô lý</td><td>25/07</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="plat-sec">
+    <h2><span class="badge" style="background:#000000">3</span><span class="pn" style="color:#000000">TIKTOK</span> — Tổng quan</h2>
+    <div class="cards5">
+      <div class="card" style="border-left-color:#000000"><div class="lbl">Tổng đơn KN</div><div class="num" style="color:#000000">110</div></div>
+      <div class="card ok"><div class="lbl">Thành công</div><div class="num">82</div></div>
+      <div class="card bad"><div class="lbl">Thất bại*</div><div class="num">6</div><div class="sub2">TB 6 + Đền bù 0</div></div>
+      <div class="card muted"><div class="lbl">Không cần KN</div><div class="num">0</div></div>
+      <div class="card pend"><div class="lbl">Đang xử lý</div><div class="num">22</div></div>
+    </div>
+    <div class="ratewrap">
+      <div class="ratebig" style="border-top-color:#000000">
+        <div class="rlbl">Tỉ lệ thành công (đơn có phát sinh khiếu nại)</div>
+        <div class="rval" style="color:#000000">93.18%</div>
+        <div class="rbar"><span style="width:93.18%;background:#000000"></span></div>
+        <div class="rsub">82 thành công / 88 đơn đã có kết quả (thành công + thất bại)</div>
+      </div>
+      <div class="ratemini">
+        <div class="rlbl">Cơ cấu đơn có phát sinh khiếu nại</div>
+        <div class="rval2">88 đơn có KQ</div>
+        <div class="rsub">Thành công <b>82</b> · Thất bại <b>6</b> (TB 6 + đền bù 0).<br>Không tính vào tỉ lệ: 22 đang xử lý, 0 không cần KN.</div>
+      </div>
+    </div>
+    <h3 class="lh">Chi tiết đơn thất bại — TIKTOK (6 đơn)</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Ngày tạo</th><th>Tracking</th><th>Kết quả</th><th>Lý do</th><th>Ngày chốt KQ</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>21/07</td><td class="mono">854151321833</td><td><span class="tag bad">Thất bại</span></td><td class="r">ĐG sai quy cách</td><td>22/07</td></tr>
+          <tr><td>2</td><td>22/07</td><td class="mono">854151903162</td><td><span class="tag bad">Thất bại</span></td><td class="r">Vô lý</td><td>26/07</td></tr>
+          <tr><td>3</td><td>22/07</td><td class="mono">854151934251</td><td><span class="tag bad">Thất bại</span></td><td class="r">Chưa chứng minh nguyên vẹn</td><td>27/07</td></tr>
+          <tr><td>4</td><td>24/07</td><td class="mono">854151151957</td><td><span class="tag bad">Thất bại</span></td><td class="r">Chưa chứng minh nguyên vẹn</td><td>26/07</td></tr>
+          <tr><td>5</td><td>25/07</td><td class="mono">VTPVN9041648510</td><td><span class="tag bad">Thất bại</span></td><td class="r">Vô lý</td><td>26/07</td></tr>
+          <tr><td>6</td><td>25/07</td><td class="mono">854151060290</td><td><span class="tag bad">Thất bại</span></td><td class="r">Chưa chứng minh nguyên vẹn</td><td>27/07</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="note">
+    <h3>⚠ Ghi chú</h3>
+    <p><b>Nguyên nhân lớn nhất: "Chưa chứng minh nguyên vẹn" — 4/8 đơn (50%)</b>, cả 4 đều rơi vào 22–25/07. Đây cũng là nguyên nhân dẫn đầu kỳ 13–19/07 (5 đơn) → nên siết lại quy trình quay clip đóng gói / kiểm hàng trước khi gửi bằng chứng.</p>
+    <p><b>3 đơn bị từ chối "vô lý"</b> (<span class="mono2">854151903162</span>, <span class="mono2">SPXVN065949221187</span>, <span class="mono2">VTPVN9041648510</span>) — chiếm 37.5% số đơn thất bại. Nhóm này nên tập hợp bằng chứng khiếu nại lại với sàn thay vì đóng luôn.</p>
+    <p>Kỳ này <b>không có đơn đền bù 1 phần</b> (kỳ 13–19/07 có 4 đơn TikTok), nên thất bại = đúng 8 đơn bị từ chối.</p>
+    <p><b>63/275 đơn (22.9%) chưa có kết quả</b> tại thời điểm xuất file 27/07 và dồn cuối kỳ (23/07: 15 · 24/07: 18 · 25/07: 19) → nên chốt lại báo cáo sau ~1 tuần; tỉ lệ 96.19% có thể thay đổi.</p>
+    <p>Kỳ báo cáo chốt <b>Thứ 2 – Thứ 7 (20–25/07)</b> theo yêu cầu; Chủ Nhật 26/07 (43 đơn) không tính vào kỳ này. Ngoài ra có <b>1 đơn kênh khác</b> (mã <span class="mono2">GYXRGDHA</span>, 20/07) đang xử lý, không thuộc Shopee/TikTok — đã cộng vào tổng 275 nhưng không có mục riêng.</p>
+  </div>
+  <div class="footer">Tạo tự động từ 3076012_2026_07_27.xlsx · Kỳ 20–25/07/2026 · Kho 170 Quốc Lộ 1A</div>
+</div>
+</body>
+</html>
