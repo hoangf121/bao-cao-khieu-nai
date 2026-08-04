@@ -19,15 +19,14 @@
   h2 .badge{font-size:12px;font-weight:800;color:#fff;border-radius:999px;padding:3px 12px;}
   h2 .pn{font-weight:800;}
   h3.lh{color:#1a3a6c;font-size:15px;margin:22px 0 10px;}
-  .cards4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
-  @media(max-width:760px){.cards4{grid-template-columns:repeat(2,1fr);}}
+  .cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+  @media(max-width:760px){.cards3{grid-template-columns:1fr;}}
   .card{background:#fff;border-radius:10px;padding:14px 16px;border-left:4px solid #1a3a6c;box-shadow:0 1px 3px rgba(26,58,108,.08);}
   .card .lbl{font-size:12px;color:#5a6472;font-weight:600;text-transform:uppercase;letter-spacing:.03em;}
   .card .num{font-size:27px;font-weight:800;margin-top:5px;line-height:1;color:#1a3a6c;font-variant-numeric:tabular-nums;}
   .card .sub2{font-size:11px;color:#8b95a3;margin-top:4px;}
   .card.ok{border-left-color:#2e7d32;} .card.ok .num{color:#2e7d32;}
   .card.bad{border-left-color:#c62828;} .card.bad .num{color:#c62828;}
-  .card.pend{border-left-color:#f9a825;} .card.pend .num{color:#c07a12;}
   .ratewrap{display:grid;grid-template-columns:1.15fr 1fr;gap:14px;margin-top:14px;}
   @media(max-width:760px){.ratewrap{grid-template-columns:1fr;}}
   .ratebig{background:#fff;border-radius:10px;padding:18px 20px;box-shadow:0 1px 3px rgba(26,58,108,.08);border-top:4px solid #1a3a6c;}
@@ -76,10 +75,6 @@
   .fc-rnd{margin-left:auto;font-size:11px;color:#8b95a3;white-space:nowrap;}
   .mono2{font-family:Consolas,"Courier New",monospace;font-size:12.5px;color:#222;}
   .tag.tk-p{background:#000;color:#fff;} .tag.sp-p{background:#ee4d2d;color:#fff;}
-  .pendgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:10px 0 2px;}
-  @media(max-width:760px){.pendgrid{grid-template-columns:1fr;}}
-  .pendrow{display:flex;align-items:center;gap:10px;background:#fff;border-radius:8px;padding:7px 13px;box-shadow:0 1px 3px rgba(26,58,108,.06);border-left:3px solid #f9a825;font-size:12.5px;color:#5a6472;}
-  .pendrow b{margin-left:auto;color:#c07a12;font-variant-numeric:tabular-nums;}
   .note{background:#fffbea;border:1px solid #f6e2a0;border-left:5px solid #f9a825;border-radius:10px;padding:16px 18px;margin-top:40px;}
   .note h3{margin:0 0 6px;color:#a86a00;font-size:15px;} .note p{margin:4px 0;font-size:13.5px;color:#6b5a20;} .note b{color:#7a4d00;}
   .footer{margin-top:30px;padding-top:14px;border-top:1px solid #dfe3ea;font-size:12px;color:#8b95a3;}
@@ -89,16 +84,15 @@
 <div class="wrap">
   <h1>Báo cáo Khiếu nại sàn</h1>
   <p class="meta">Kỳ báo cáo: <b>27/07 – 02/08/2026</b> (Thứ 2 – Chủ Nhật) · Kho 170 Quốc Lộ 1A</p>
-  <p class="meta"><b>Quy ước:</b> Đền bù 1 phần được tính là <b style="color:#c62828">Thất bại</b>. Tỉ lệ thành công / thất bại tính trên số đơn <b>đã có kết quả</b> (thành công + thất bại) — không tính đơn đang xử lý. 25 đơn <i>“Không cần khiếu nại”</i> (đơn fail delivery) đã loại khỏi báo cáo.</p>
+  <p class="meta"><b>Quy ước:</b> Đền bù 1 phần được tính là <b style="color:#c62828">Thất bại</b>. Báo cáo chỉ tính các đơn <b>đã có kết quả</b> (thành công + thất bại); đơn còn đang khiếu nại và 25 đơn <i>“Không cần khiếu nại”</i> (đơn fail delivery) không đưa vào báo cáo.</p>
   <div class="rule"></div>
 
   <section class="plat-sec" style="margin-top:24px">
     <h2><span class="badge" style="background:#1a3a6c">TỔNG</span><span>Cả 2 sàn</span></h2>
-    <div class="cards4">
-      <div class="card"><div class="lbl">Tổng đơn KN</div><div class="num">279</div><div class="sub2">Shopee 149 · TikTok 130</div></div>
+    <div class="cards3">
+      <div class="card"><div class="lbl">Đơn đã có kết quả</div><div class="num">213</div><div class="sub2">Shopee 144 · TikTok 69</div></div>
       <div class="card ok"><div class="lbl">Thành công</div><div class="num">207</div></div>
       <div class="card bad"><div class="lbl">Thất bại*</div><div class="num">6</div><div class="sub2">TB 3 + Đền bù 3</div></div>
-      <div class="card pend"><div class="lbl">Đang xử lý</div><div class="num">66</div></div>
     </div>
     <div class="ratewrap">
       <div class="ratebig">
@@ -108,7 +102,7 @@
           <div><div class="rvalf">2.82%</div><div class="rcap">Thất bại</div></div>
         </div>
         <div class="rbar"><span style="width:97.18%;background:#1a3a6c"></span><span style="width:2.82%;background:#c62828"></span></div>
-        <div class="rsub">207 thành công · 6 thất bại — chưa tính 66 đơn đang xử lý</div>
+        <div class="rsub">207 thành công · 6 thất bại</div>
       </div>
       <div class="ratemini">
         <div class="rlbl">So với tuần (20–26/07)</div>
@@ -126,16 +120,6 @@
         </div>
         <div class="rsub">Tổng 2 sàn 97.06% → <b>97.18%</b> (<span class="up">▲ 0.12</span> điểm); số đơn thất bại giảm 8 → <b>6</b>. TikTok cải thiện, Shopee giảm nhẹ.</div>
       </div>
-    </div>
-    <h3 class="lh">66 đơn đang xử lý — theo trạng thái (Shopee 5 · TikTok 61)</h3>
-    <div class="pendgrid">
-      <div class="pendrow"><span>Đã gửi KN — chờ sàn phản hồi</span><b>49</b></div>
-      <div class="pendrow"><span>Đã giao ĐVVC (trả hàng)</span><b>6</b></div>
-      <div class="pendrow"><span>Chờ Vận hành gửi lại</span><b>6</b></div>
-      <div class="pendrow"><span>Chờ mã vận đơn hoàn</span><b>2</b></div>
-      <div class="pendrow"><span>Sàn yêu cầu bổ sung bằng chứng</span><b>1</b></div>
-      <div class="pendrow"><span>Chưa khiếu nại</span><b>1</b></div>
-      <div class="pendrow"><span>Đã đóng gói hàng trả</span><b>1</b></div>
     </div>
   </section>
 
@@ -157,7 +141,7 @@
         </div>
       </div>
       <div class="fcause soft">
-        <h4><span>Đền bù 1 phần — sàn không nêu nguyên nhân</span><span class="fcount">3 đơn</span></h4>
+        <h4><span>Đền bù 1 phần</span><span class="fcount">3 đơn</span></h4>
         <div class="fc-list">
           <div class="fc-item"><span class="tag tk-p">TIKTOK</span><span class="fc-day">27/07</span><span class="mono2">VTPVN9042282913</span><span class="fc-rnd">vòng 1</span></div>
           <div class="fc-item"><span class="tag sp-p">SHOPEE</span><span class="fc-day">31/07</span><span class="mono2">SPXVN069035349747</span><span class="fc-rnd">vòng 1</span></div>
@@ -171,12 +155,12 @@
       <table>
         <thead><tr><th>#</th><th>Sàn</th><th>Ngày tạo</th><th>Tracking</th><th>Kết quả</th><th>Nguyên nhân</th><th>Vòng</th><th>Ngày chốt KQ</th><th>Người gửi KN</th></tr></thead>
         <tbody>
-          <tr><td>1</td><td><span class="tag tk-p">TIKTOK</span></td><td>27/07</td><td class="mono">VTPVN9042282913</td><td><span class="tag bad">Đền bù 1 phần</span></td><td class="r"><span style="color:#b6bec9">sàn không nêu</span></td><td style="text-align:center">1</td><td>29/07</td><td>nhipty3@hasaki.vn</td></tr>
+          <tr><td>1</td><td><span class="tag tk-p">TIKTOK</span></td><td>27/07</td><td class="mono">VTPVN9042282913</td><td><span class="tag bad">Đền bù 1 phần</span></td><td class="r"><span style="color:#b6bec9">—</span></td><td style="text-align:center">1</td><td>29/07</td><td>nhipty3@hasaki.vn</td></tr>
           <tr><td>2</td><td><span class="tag tk-p">TIKTOK</span></td><td>27/07</td><td class="mono">VTPVN9048153912</td><td><span class="tag bad">Thất bại</span></td><td class="r">ĐG sai quy cách<span class="q" title="ĐG sai quy cách">ⓘ</span></td><td style="text-align:center">4</td><td>01/08</td><td>nhipty3@hasaki.vn</td></tr>
           <tr><td>3</td><td><span class="tag tk-p">TIKTOK</span></td><td>28/07</td><td class="mono">VTPVN9042383617</td><td><span class="tag bad">Thất bại</span></td><td class="r">Chưa chứng minh nguyên vẹn<span class="q" title="Chưa chứng minh nguyên vẹn: người mua do nhận thấy bằng chứng mà bạn cung cấp không hợp lệ">ⓘ</span></td><td style="text-align:center">3</td><td>03/08</td><td>nhipty3@hasaki.vn</td></tr>
           <tr><td>4</td><td><span class="tag sp-p">SHOPEE</span></td><td>30/07</td><td class="mono">SPXVN062786601227</td><td><span class="tag bad">Thất bại</span></td><td class="r">ĐG sai quy cách<span class="q" title="bằng chứng đóng gói chưa đúng theo quy định của Shopee, chưa chèn kín 6 mặt kiện hàng.">ⓘ</span></td><td style="text-align:center">1</td><td>30/07</td><td>hienpt2@hasaki.vn</td></tr>
-          <tr><td>5</td><td><span class="tag sp-p">SHOPEE</span></td><td>31/07</td><td class="mono">SPXVN069035349747</td><td><span class="tag bad">Đền bù 1 phần</span></td><td class="r"><span style="color:#b6bec9">sàn không nêu</span></td><td style="text-align:center">1</td><td>31/07</td><td>nhipty3@hasaki.vn</td></tr>
-          <tr><td>6</td><td><span class="tag sp-p">SHOPEE</span></td><td>02/08</td><td class="mono">SPXVN064600714387</td><td><span class="tag bad">Đền bù 1 phần</span></td><td class="r"><span style="color:#b6bec9">sàn không nêu</span></td><td style="text-align:center">1</td><td>04/08</td><td>nhipty3@hasaki.vn</td></tr>
+          <tr><td>5</td><td><span class="tag sp-p">SHOPEE</span></td><td>31/07</td><td class="mono">SPXVN069035349747</td><td><span class="tag bad">Đền bù 1 phần</span></td><td class="r"><span style="color:#b6bec9">—</span></td><td style="text-align:center">1</td><td>31/07</td><td>nhipty3@hasaki.vn</td></tr>
+          <tr><td>6</td><td><span class="tag sp-p">SHOPEE</span></td><td>02/08</td><td class="mono">SPXVN064600714387</td><td><span class="tag bad">Đền bù 1 phần</span></td><td class="r"><span style="color:#b6bec9">—</span></td><td style="text-align:center">1</td><td>04/08</td><td>nhipty3@hasaki.vn</td></tr>
         </tbody>
       </table>
     </div>
@@ -185,11 +169,10 @@
 
   <section class="plat-sec">
     <h2><span class="badge" style="background:#ee4d2d">2</span><span class="pn" style="color:#ee4d2d">SHOPEE</span> — Tổng quan</h2>
-    <div class="cards4">
-      <div class="card" style="border-left-color:#ee4d2d"><div class="lbl">Tổng đơn KN</div><div class="num" style="color:#ee4d2d">149</div></div>
+    <div class="cards3">
+      <div class="card" style="border-left-color:#ee4d2d"><div class="lbl">Đơn đã có kết quả</div><div class="num" style="color:#ee4d2d">144</div></div>
       <div class="card ok"><div class="lbl">Thành công</div><div class="num">141</div></div>
       <div class="card bad"><div class="lbl">Thất bại*</div><div class="num">3</div><div class="sub2">TB 1 + Đền bù 2</div></div>
-      <div class="card pend"><div class="lbl">Đang xử lý</div><div class="num">5</div></div>
     </div>
     <div class="ratewrap">
       <div class="ratebig" style="border-top-color:#ee4d2d">
@@ -199,7 +182,7 @@
           <div><div class="rvalf">2.08%</div><div class="rcap">Thất bại</div></div>
         </div>
         <div class="rbar"><span style="width:97.92%;background:#ee4d2d"></span><span style="width:2.08%;background:#c62828"></span></div>
-        <div class="rsub">141 thành công · 3 thất bại — chưa tính 5 đơn đang xử lý</div>
+        <div class="rsub">141 thành công · 3 thất bại</div>
       </div>
       <div class="ratemini">
         <div class="rlbl">So với tuần (20–26/07)</div>
@@ -224,8 +207,8 @@
         <thead><tr><th>#</th><th>Ngày tạo</th><th>Tracking</th><th>Mã đơn</th><th>Kết quả</th><th>Nguyên nhân</th><th>Vòng</th><th>Ngày chốt KQ</th></tr></thead>
         <tbody>
           <tr><td>1</td><td>30/07</td><td class="mono">SPXVN062786601227</td><td class="mono">26072500403201</td><td><span class="tag bad">Thất bại</span></td><td class="r">ĐG sai quy cách<span class="q" title="bằng chứng đóng gói chưa đúng theo quy định của Shopee, chưa chèn kín 6 mặt kiện hàng.">ⓘ</span></td><td style="text-align:center">1</td><td>30/07</td></tr>
-          <tr><td>2</td><td>31/07</td><td class="mono">SPXVN069035349747</td><td class="mono">26072700887501</td><td><span class="tag bad">Đền bù 1 phần</span></td><td class="r"><span style="color:#b6bec9">sàn không nêu</span></td><td style="text-align:center">1</td><td>31/07</td></tr>
-          <tr><td>3</td><td>02/08</td><td class="mono">SPXVN064600714387</td><td class="mono">26072500700001</td><td><span class="tag bad">Đền bù 1 phần</span></td><td class="r"><span style="color:#b6bec9">sàn không nêu</span></td><td style="text-align:center">1</td><td>04/08</td></tr>
+          <tr><td>2</td><td>31/07</td><td class="mono">SPXVN069035349747</td><td class="mono">26072700887501</td><td><span class="tag bad">Đền bù 1 phần</span></td><td class="r"><span style="color:#b6bec9">—</span></td><td style="text-align:center">1</td><td>31/07</td></tr>
+          <tr><td>3</td><td>02/08</td><td class="mono">SPXVN064600714387</td><td class="mono">26072500700001</td><td><span class="tag bad">Đền bù 1 phần</span></td><td class="r"><span style="color:#b6bec9">—</span></td><td style="text-align:center">1</td><td>04/08</td></tr>
         </tbody>
       </table>
     </div>
@@ -233,11 +216,10 @@
 
   <section class="plat-sec">
     <h2><span class="badge" style="background:#000000">3</span><span class="pn" style="color:#000000">TIKTOK</span> — Tổng quan</h2>
-    <div class="cards4">
-      <div class="card" style="border-left-color:#000000"><div class="lbl">Tổng đơn KN</div><div class="num" style="color:#000000">130</div></div>
+    <div class="cards3">
+      <div class="card" style="border-left-color:#000000"><div class="lbl">Đơn đã có kết quả</div><div class="num" style="color:#000000">69</div></div>
       <div class="card ok"><div class="lbl">Thành công</div><div class="num">66</div></div>
       <div class="card bad"><div class="lbl">Thất bại*</div><div class="num">3</div><div class="sub2">TB 2 + Đền bù 1</div></div>
-      <div class="card pend"><div class="lbl">Đang xử lý</div><div class="num">61</div></div>
     </div>
     <div class="ratewrap">
       <div class="ratebig" style="border-top-color:#000000">
@@ -247,7 +229,7 @@
           <div><div class="rvalf">4.35%</div><div class="rcap">Thất bại</div></div>
         </div>
         <div class="rbar"><span style="width:95.65%;background:#000000"></span><span style="width:4.35%;background:#c62828"></span></div>
-        <div class="rsub">66 thành công · 3 thất bại — chưa tính 61 đơn đang xử lý</div>
+        <div class="rsub">66 thành công · 3 thất bại</div>
       </div>
       <div class="ratemini">
         <div class="rlbl">So với tuần (20–26/07)</div>
@@ -271,7 +253,7 @@
       <table>
         <thead><tr><th>#</th><th>Ngày tạo</th><th>Tracking</th><th>Mã đơn</th><th>Kết quả</th><th>Nguyên nhân</th><th>Vòng</th><th>Ngày chốt KQ</th></tr></thead>
         <tbody>
-          <tr><td>1</td><td>27/07</td><td class="mono">VTPVN9042282913</td><td class="mono">26072200424201</td><td><span class="tag bad">Đền bù 1 phần</span></td><td class="r"><span style="color:#b6bec9">sàn không nêu</span></td><td style="text-align:center">1</td><td>29/07</td></tr>
+          <tr><td>1</td><td>27/07</td><td class="mono">VTPVN9042282913</td><td class="mono">26072200424201</td><td><span class="tag bad">Đền bù 1 phần</span></td><td class="r"><span style="color:#b6bec9">—</span></td><td style="text-align:center">1</td><td>29/07</td></tr>
           <tr><td>2</td><td>27/07</td><td class="mono">VTPVN9048153912</td><td class="mono">26072300632401</td><td><span class="tag bad">Thất bại</span></td><td class="r">ĐG sai quy cách<span class="q" title="ĐG sai quy cách">ⓘ</span></td><td style="text-align:center">4</td><td>01/08</td></tr>
           <tr><td>3</td><td>28/07</td><td class="mono">VTPVN9042383617</td><td class="mono">26072300333201</td><td><span class="tag bad">Thất bại</span></td><td class="r">Chưa chứng minh nguyên vẹn<span class="q" title="Chưa chứng minh nguyên vẹn: người mua do nhận thấy bằng chứng mà bạn cung cấp không hợp lệ">ⓘ</span></td><td style="text-align:center">3</td><td>03/08</td></tr>
         </tbody>
@@ -284,10 +266,9 @@
     <p><b>Tỉ lệ thành công cả 2 sàn 97.18%</b> (207/213 đơn đã có kết quả), nhích nhẹ so với tuần 20–26/07 (97.06%). Số đơn thất bại giảm 8 → 6 đơn.</p>
     <p><b>Nguyên nhân dẫn đầu: “ĐG sai quy cách” — 2/6 đơn</b>. Cả 2 đơn đều do bằng chứng đóng gói không đạt (Shopee: chưa chèn kín 6 mặt kiện hàng) → cần siết lại quy cách đóng gói và chất lượng clip đóng gói trước khi gửi bằng chứng.</p>
     <p><b>Mới phát sinh 3 đơn “Đền bù 1 phần”</b> (tuần 20–26/07 không có đơn nào): <span class="mono2">VTPVN9042282913</span>, <span class="mono2">SPXVN069035349747</span>, <span class="mono2">SPXVN064600714387</span>. Sàn chỉ bồi thường một phần giá trị và <b>không ghi nguyên nhân</b> trong nhật ký — nên bổ sung lý do khi chốt case để kỳ sau phân tích được.</p>
-    <p><b>2 đơn TikTok bị từ chối sau nhiều vòng khiếu nại</b>: <span class="mono2">VTPVN9048153912</span> (vòng 4) và <span class="mono2">VTPVN9042383617</span> (vòng 3). Toàn kỳ có <b>14 đơn phải gửi lại từ lần 2 trở lên</b> — chỉ 6 thắng, 2 thất bại, 6 còn treo → gửi lại nhiều lần hiệu quả thấp, nên tập trung làm đúng bằng chứng ngay vòng 1.</p>
-    <p><b>43 đơn bị sàn yêu cầu bổ sung bằng chứng (CCBC)</b> trong kỳ: 14 thắng · 3 thất bại · <b>26 còn treo</b>. Đây là nhóm ngốn thời gian nhất và cũng là nguồn chính của 66 đơn đang xử lý.</p>
-    <p><b>TikTok còn 61/130 đơn (46.92%) chưa có kết quả</b>, trong đó 49 đơn đã gửi khiếu nại và đang chờ sàn phản hồi; tỉ lệ 95.65% của TikTok mới tính trên 69 đơn nên còn thay đổi → nên chốt lại sau ~1 tuần. Ngược lại <b>Shopee gần như đã chốt xong</b> (còn 5/149 đơn), nên 97.92% là con số khá chắc.</p>
-    <p>Thời gian từ lúc tạo phiếu tới khi chốt kết quả: <b>trung vị 20.4 giờ</b> (213 đơn đã có kết quả).</p>
+    <p><b>2 đơn TikTok bị từ chối sau nhiều vòng khiếu nại</b>: <span class="mono2">VTPVN9048153912</span> (vòng 4) và <span class="mono2">VTPVN9042383617</span> (vòng 3). Trong 8 đơn phải gửi lại từ lần 2 trở lên mà đã có kết quả thì <b>2 đơn thất bại</b> (25.00%) — cao gấp nhiều lần tỉ lệ thất bại chung 2.82% → gửi lại nhiều lần hiệu quả thấp, nên làm đúng bằng chứng ngay vòng 1.</p>
+    <p><b>Đơn bị sàn yêu cầu bổ sung bằng chứng (CCBC) rủi ro cao hơn hẳn</b>: 17 đơn CCBC đã có kết quả thì 3 thất bại (17.65%), tức <b>3 trong 6 đơn thất bại của kỳ</b> đều từng bị sàn đòi bổ sung bằng chứng.</p>
+    <p>Thời gian từ lúc tạo phiếu tới khi chốt kết quả: <b>trung vị 20.4 giờ</b> (213 đơn).</p>
     <p>Kỳ báo cáo tính theo <b>ngày tạo phiếu khiếu nại</b>, trọn 7 ngày Thứ 2 – Chủ Nhật. Dữ liệu chốt tại thời điểm export <b>04/08/2026</b>; số liệu tuần 20–26/07 được tính lại từ chính file này nên có thể lệch chút so với bản báo cáo tuần trước (một số case đã đổi trạng thái sau đó). Báo cáo chỉ ghi nhận 2 sàn <b>Shopee</b> và <b>TikTok</b>.</p>
   </div>
   <div class="footer">Tạo tự động từ KQ KN.xlsx + 3104166_2026_08_04.csv · Kỳ 27/07–02/08/2026 · Kho 170 Quốc Lộ 1A</div>
