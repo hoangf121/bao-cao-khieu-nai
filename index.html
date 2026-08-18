@@ -66,10 +66,10 @@ section{background:#fff;border:1px solid #e3e6ed;border-radius:12px;padding:20px
   padding:14px 16px;font-size:13px;color:#2b4a2b}
 .empty b{color:#1f5c22}
 .tw{overflow-x:auto;border:1px solid #e3e6ed;border-radius:10px}
-table{border-collapse:collapse;width:100%;font-size:13px;min-width:840px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:13px;min-width:1120px;background:#fff}
 th{background:#1a3a6c;color:#fff;text-align:left;padding:9px 11px;font-size:11.5px;
   text-transform:uppercase;letter-spacing:.4px;font-weight:600;white-space:nowrap}
-td{padding:8px 11px;border-top:1px solid #edeff4;vertical-align:middle}
+td{padding:8px 11px;border-top:1px solid #edeff4;vertical-align:top}
 tbody tr:nth-child(even){background:#fafbfd}
 td.c,th.c{text-align:center}
 .mono{font-family:Consolas,"Courier New",monospace;font-size:12.5px}
@@ -82,6 +82,18 @@ td.c,th.c{text-align:center}
 .warn{background:#fff4e5;border:1px solid #f2cf9b;border-left:4px solid #e07b00;border-radius:10px;
   padding:13px 16px;font-size:13px;color:#5a3c05;margin-bottom:20px}
 .warn b{color:#8a4b00}
+.skusum{background:#f8f9fc;border:1px solid #e6e9f0;border-radius:9px;padding:11px 14px;margin-bottom:14px;font-size:12.8px;color:#3d4553}
+.skusum b{color:#1a3a6c}
+.skucol{min-width:250px}
+.skul{padding:3px 0}.skul+.skul{border-top:1px dashed #e6e9f0;margin-top:3px}
+.skub{display:inline-block;padding:1px 7px;border-radius:5px;font-size:10.5px;font-weight:700;letter-spacing:.2px}
+.skub.dmg{background:#fdecec;color:#c62828}.skub.nrv{background:#fff1e0;color:#a35200}
+.skun{font-size:11.5px;color:#5a6472;margin-top:1px}
+.skunote{font-size:11px;color:#8a919c;font-style:italic;margin-top:1px}
+.ptmain{font-size:12.5px;color:#22272f;font-weight:600}
+.ptsub{font-size:11px;color:#8a919c;margin-top:1px}
+.nosku{color:#b6bdcb}
+.sess{font-size:12px;color:#1a3a6c;text-decoration:none;border-bottom:1px dotted #9fb0cc}
 .note{background:#fffbe9;border:1px solid #f0e0a8;border-left:4px solid #e0a800;border-radius:9px;
   padding:14px 16px;font-size:12.8px;color:#584a15;margin-bottom:18px}
 .note b{color:#3f3410}
@@ -134,8 +146,11 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
 <section>
 <h2><span class="num">1</span> Tổng hợp đơn thất bại — cả 2 sàn (9 đơn)</h2>
 <div class="fcauses"><div class="fcause"><div class="fn">3</div><div class="fc">ĐG sai quy cách sàn</div></div><div class="fcause"><div class="fn">1</div><div class="fc">Camera không đủ ĐK</div></div><div class="fcause soft"><div class="fn">5</div><div class="fc">Đền bù 1 phần</div></div></div>
+<div class="skusum"><b>Hàng lỗi ghi nhận trong phiên kiểm:</b>
+    <span class="skub dmg">HƯ HỎNG</span> 8 SKU · <span class="skub nrv">KHÔNG NHẬN</span> 2 SKU
+    — trên 9/9 đơn thất bại.</div>
 <div class="tw"><table>
-  <thead><tr><th class="c">#</th><th>Sàn</th><th class="c">Ngày tạo</th><th>Tracking</th><th>Nguyên nhân</th><th>Kết quả</th><th class="c">Vòng</th><th class="c">Ngày chốt KQ</th><th>Người khiếu nại</th></tr></thead>
+  <thead><tr><th class="c">#</th><th>Sàn</th><th class="c">Ngày tạo</th><th>Tracking</th><th>Nguyên nhân</th><th>Kết quả</th><th class="c">Vòng</th><th class="c">Ngày chốt KQ</th><th>Người phụ trách KN</th><th>Phiên kiểm</th><th>SKU hư hỏng / không nhận</th></tr></thead>
   <tbody><tr>
       <td class="c">1</td>
       <td><span class="tag tt">TikTok</span></td>
@@ -145,7 +160,10 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
       <td><span class="res lose">Thất bại</span></td>
       <td class="c">1</td>
       <td class="c">17/08</td>
-      <td class="em">—</td>
+      <td class="em"><div class="ptmain">nguyenntt1</div><div class="ptsub">chốt KQ: hienpt2</div></td>
+      <td><a class="mono sess" href="https://wms.inshasaki.com/return-order/checking_session/details/1018260813000300" target="_blank" rel="noopener">1018260813000300</a></td>
+      <td class="skucol"><div class="skul"><span class="skub dmg">HƯ HỎNG ×1</span> <span class="mono">422207865</span>
+    <div class="skun">Cetaphil Gentle Skin Cleanser 125ml new</div><div class="skunote">hoàn sp cận date (04/2027)</div></div></td>
     </tr><tr>
       <td class="c">2</td>
       <td><span class="tag tt">TikTok</span></td>
@@ -155,7 +173,10 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
       <td><span class="res lose">Thất bại</span></td>
       <td class="c">5</td>
       <td class="c">13/08</td>
-      <td class="em">—</td>
+      <td class="em"><div class="ptmain">nguyenntt1</div><div class="ptsub">ôm case: hamlx</div></td>
+      <td><a class="mono sess" href="https://wms.inshasaki.com/return-order/checking_session/details/1018260810000568" target="_blank" rel="noopener">1018260810000568</a></td>
+      <td class="skucol"><div class="skul"><span class="skub dmg">HƯ HỎNG ×1</span> <span class="mono">100330047</span>
+    <div class="skun">Dầu gội biotin &amp; collagen ogx 385ml</div><div class="skunote">BỂ NẮP, ĐỔ GẦN HẾT SP RA NGOÀI</div></div></td>
     </tr><tr>
       <td class="c">3</td>
       <td><span class="tag tt">TikTok</span></td>
@@ -165,7 +186,10 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
       <td><span class="res lose">Thất bại</span></td>
       <td class="c">1</td>
       <td class="c">14/08</td>
-      <td class="em">—</td>
+      <td class="em"><div class="ptmain">nguyenntt1</div></td>
+      <td><a class="mono sess" href="https://wms.inshasaki.com/return-order/checking_session/details/1018260813000022" target="_blank" rel="noopener">1018260813000022</a></td>
+      <td class="skucol"><div class="skul"><span class="skub dmg">HƯ HỎNG ×1</span> <span class="mono">422204388</span>
+    <div class="skun">Caryophy Smart Sunscreen 50ml</div><div class="skunote">BỂ, ĐỔ HẾT SP RA NGOÀI</div></div></td>
     </tr><tr>
       <td class="c">4</td>
       <td><span class="tag tt">TikTok</span></td>
@@ -175,7 +199,10 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
       <td><span class="res lose">Thất bại</span></td>
       <td class="c">1</td>
       <td class="c">14/08</td>
-      <td class="em">—</td>
+      <td class="em"><div class="ptmain">nguyenntt1</div></td>
+      <td><a class="mono sess" href="https://wms.inshasaki.com/return-order/checking_session/details/1018260813000320" target="_blank" rel="noopener">1018260813000320</a></td>
+      <td class="skucol"><div class="skul"><span class="skub dmg">HƯ HỎNG ×1</span> <span class="mono">422204576</span>
+    <div class="skun">Chacott for Professionals Cleansing Water 500ml</div><div class="skunote">bung seal, rò rỉ chất</div></div></td>
     </tr><tr>
       <td class="c">5</td>
       <td><span class="tag tt">TikTok</span></td>
@@ -185,7 +212,10 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
       <td><span class="res part">Đền bù 1 phần</span></td>
       <td class="c">1</td>
       <td class="c">14/08</td>
-      <td class="em">—</td>
+      <td class="em"><div class="ptmain">nguyenntt1</div></td>
+      <td><a class="mono sess" href="https://wms.inshasaki.com/return-order/checking_session/details/1018260813000381" target="_blank" rel="noopener">1018260813000381</a></td>
+      <td class="skucol"><div class="skul"><span class="skub dmg">HƯ HỎNG ×1</span> <span class="mono">422216354</span>
+    <div class="skun">LA ROCHE POSAY EFFACLAR DUO+M 7.5ML MB592400</div><div class="skunote">dán keo và viết số lên bao bì, hư bao bì</div></div></td>
     </tr><tr>
       <td class="c">6</td>
       <td><span class="tag sp">Shopee</span></td>
@@ -195,7 +225,11 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
       <td><span class="res part">Đền bù 1 phần</span></td>
       <td class="c">1</td>
       <td class="c">15/08</td>
-      <td class="em">—</td>
+      <td class="em"><div class="ptmain">huongttx</div><div class="ptsub">chốt KQ: thaolt6</div></td>
+      <td><a class="mono sess" href="https://wms.inshasaki.com/return-order/checking_session/details/1018260813000582" target="_blank" rel="noopener">1018260813000582</a></td>
+      <td class="skucol"><div class="skul"><span class="skub nrv">KHÔNG NHẬN ×1</span> <span class="mono">422230856</span>
+    <div class="skun">Cetaphil Soothing and Comforting Cica Calming Face Cream 10ml</div><div class="skunote">hoàn thiếu sp</div></div><div class="skul"><span class="skub nrv">KHÔNG NHẬN ×1</span> <span class="mono">200900037</span>
+    <div class="skun">CETAPHIL Gentle Skin Cleanser 59ML</div><div class="skunote">hoàn thiếu sp</div></div></td>
     </tr><tr>
       <td class="c">7</td>
       <td><span class="tag tt">TikTok</span></td>
@@ -205,7 +239,10 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
       <td><span class="res part">Đền bù 1 phần</span></td>
       <td class="c">1</td>
       <td class="c">15/08</td>
-      <td class="em">—</td>
+      <td class="em"><div class="ptmain">nguyenntt1</div></td>
+      <td><a class="mono sess" href="https://wms.inshasaki.com/return-order/checking_session/details/1018260813000708" target="_blank" rel="noopener">1018260813000708</a></td>
+      <td class="skucol"><div class="skul"><span class="skub dmg">HƯ HỎNG ×1</span> <span class="mono">249500011</span>
+    <div class="skun">sunplay Sữa chống nắng (Super Block SPF81) 70g</div><div class="skunote">SP RÁCH BAO BÌ</div></div></td>
     </tr><tr>
       <td class="c">8</td>
       <td><span class="tag tt">TikTok</span></td>
@@ -215,7 +252,10 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
       <td><span class="res part">Đền bù 1 phần</span></td>
       <td class="c">1</td>
       <td class="c">16/08</td>
-      <td class="em">—</td>
+      <td class="em"><div class="ptmain">nguyenntt1</div></td>
+      <td><a class="mono sess" href="https://wms.inshasaki.com/return-order/checking_session/details/1018260814000912" target="_blank" rel="noopener">1018260814000912</a></td>
+      <td class="skucol"><div class="skul"><span class="skub dmg">HƯ HỎNG ×1</span> <span class="mono">422207325</span>
+    <div class="skun">LIFEBUOY Sữa Tắm Trà Xanh Khổ Qua 800G/12 Chai</div><div class="skunote">SP DÍNH VÒI, DƠ BAO BÌ</div></div></td>
     </tr><tr>
       <td class="c">9</td>
       <td><span class="tag tt">TikTok</span></td>
@@ -225,7 +265,10 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
       <td><span class="res part">Đền bù 1 phần</span></td>
       <td class="c">1</td>
       <td class="c">17/08</td>
-      <td class="em">—</td>
+      <td class="em"><div class="ptmain">nguyenntt1</div><div class="ptsub">chốt KQ: hienpt2</div></td>
+      <td><a class="mono sess" href="https://wms.inshasaki.com/return-order/checking_session/details/1018260814000957" target="_blank" rel="noopener">1018260814000957</a></td>
+      <td class="skucol"><div class="skul"><span class="skub dmg">HƯ HỎNG ×1</span> <span class="mono">422266773</span>
+    <div class="skun">Hotosu Anti-Static Detangler Brush, Pink (8587_Pink Electroplated)</div><div class="skunote">mất seal, đã sử dụng có dính tóc</div></div></td>
     </tr></tbody></table></div>
 </section>
 
@@ -257,7 +300,7 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
 <h3>Chi tiết đơn thất bại Shopee (1 đơn)</h3>
 <div class="fcauses"><div class="fcause soft"><div class="fn">1</div><div class="fc">Đền bù 1 phần</div></div></div>
 <div class="tw"><table>
-  <thead><tr><th class="c">#</th><th class="c">Ngày tạo</th><th>Tracking</th><th>Nguyên nhân</th><th>Kết quả</th><th class="c">Vòng</th><th class="c">Ngày chốt KQ</th><th>Người khiếu nại</th></tr></thead>
+  <thead><tr><th class="c">#</th><th class="c">Ngày tạo</th><th>Tracking</th><th>Nguyên nhân</th><th>Kết quả</th><th class="c">Vòng</th><th class="c">Ngày chốt KQ</th><th>Người phụ trách KN</th><th>Phiên kiểm</th><th>SKU hư hỏng / không nhận</th></tr></thead>
   <tbody><tr>
       <td class="c">1</td>
       
@@ -267,7 +310,11 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
       <td><span class="res part">Đền bù 1 phần</span></td>
       <td class="c">1</td>
       <td class="c">15/08</td>
-      <td class="em">—</td>
+      <td class="em"><div class="ptmain">huongttx</div><div class="ptsub">chốt KQ: thaolt6</div></td>
+      <td><a class="mono sess" href="https://wms.inshasaki.com/return-order/checking_session/details/1018260813000582" target="_blank" rel="noopener">1018260813000582</a></td>
+      <td class="skucol"><div class="skul"><span class="skub nrv">KHÔNG NHẬN ×1</span> <span class="mono">422230856</span>
+    <div class="skun">Cetaphil Soothing and Comforting Cica Calming Face Cream 10ml</div><div class="skunote">hoàn thiếu sp</div></div><div class="skul"><span class="skub nrv">KHÔNG NHẬN ×1</span> <span class="mono">200900037</span>
+    <div class="skun">CETAPHIL Gentle Skin Cleanser 59ML</div><div class="skunote">hoàn thiếu sp</div></div></td>
     </tr></tbody></table></div>
 </section>
 
@@ -299,7 +346,7 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
 <h3>Chi tiết đơn thất bại TikTok (8 đơn)</h3>
 <div class="fcauses"><div class="fcause"><div class="fn">3</div><div class="fc">ĐG sai quy cách sàn</div></div><div class="fcause"><div class="fn">1</div><div class="fc">Camera không đủ ĐK</div></div><div class="fcause soft"><div class="fn">4</div><div class="fc">Đền bù 1 phần</div></div></div>
 <div class="tw"><table>
-  <thead><tr><th class="c">#</th><th class="c">Ngày tạo</th><th>Tracking</th><th>Nguyên nhân</th><th>Kết quả</th><th class="c">Vòng</th><th class="c">Ngày chốt KQ</th><th>Người khiếu nại</th></tr></thead>
+  <thead><tr><th class="c">#</th><th class="c">Ngày tạo</th><th>Tracking</th><th>Nguyên nhân</th><th>Kết quả</th><th class="c">Vòng</th><th class="c">Ngày chốt KQ</th><th>Người phụ trách KN</th><th>Phiên kiểm</th><th>SKU hư hỏng / không nhận</th></tr></thead>
   <tbody><tr>
       <td class="c">1</td>
       
@@ -309,7 +356,10 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
       <td><span class="res lose">Thất bại</span></td>
       <td class="c">1</td>
       <td class="c">17/08</td>
-      <td class="em">—</td>
+      <td class="em"><div class="ptmain">nguyenntt1</div><div class="ptsub">chốt KQ: hienpt2</div></td>
+      <td><a class="mono sess" href="https://wms.inshasaki.com/return-order/checking_session/details/1018260813000300" target="_blank" rel="noopener">1018260813000300</a></td>
+      <td class="skucol"><div class="skul"><span class="skub dmg">HƯ HỎNG ×1</span> <span class="mono">422207865</span>
+    <div class="skun">Cetaphil Gentle Skin Cleanser 125ml new</div><div class="skunote">hoàn sp cận date (04/2027)</div></div></td>
     </tr><tr>
       <td class="c">2</td>
       
@@ -319,7 +369,10 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
       <td><span class="res lose">Thất bại</span></td>
       <td class="c">5</td>
       <td class="c">13/08</td>
-      <td class="em">—</td>
+      <td class="em"><div class="ptmain">nguyenntt1</div><div class="ptsub">ôm case: hamlx</div></td>
+      <td><a class="mono sess" href="https://wms.inshasaki.com/return-order/checking_session/details/1018260810000568" target="_blank" rel="noopener">1018260810000568</a></td>
+      <td class="skucol"><div class="skul"><span class="skub dmg">HƯ HỎNG ×1</span> <span class="mono">100330047</span>
+    <div class="skun">Dầu gội biotin &amp; collagen ogx 385ml</div><div class="skunote">BỂ NẮP, ĐỔ GẦN HẾT SP RA NGOÀI</div></div></td>
     </tr><tr>
       <td class="c">3</td>
       
@@ -329,7 +382,10 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
       <td><span class="res lose">Thất bại</span></td>
       <td class="c">1</td>
       <td class="c">14/08</td>
-      <td class="em">—</td>
+      <td class="em"><div class="ptmain">nguyenntt1</div></td>
+      <td><a class="mono sess" href="https://wms.inshasaki.com/return-order/checking_session/details/1018260813000022" target="_blank" rel="noopener">1018260813000022</a></td>
+      <td class="skucol"><div class="skul"><span class="skub dmg">HƯ HỎNG ×1</span> <span class="mono">422204388</span>
+    <div class="skun">Caryophy Smart Sunscreen 50ml</div><div class="skunote">BỂ, ĐỔ HẾT SP RA NGOÀI</div></div></td>
     </tr><tr>
       <td class="c">4</td>
       
@@ -339,7 +395,10 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
       <td><span class="res lose">Thất bại</span></td>
       <td class="c">1</td>
       <td class="c">14/08</td>
-      <td class="em">—</td>
+      <td class="em"><div class="ptmain">nguyenntt1</div></td>
+      <td><a class="mono sess" href="https://wms.inshasaki.com/return-order/checking_session/details/1018260813000320" target="_blank" rel="noopener">1018260813000320</a></td>
+      <td class="skucol"><div class="skul"><span class="skub dmg">HƯ HỎNG ×1</span> <span class="mono">422204576</span>
+    <div class="skun">Chacott for Professionals Cleansing Water 500ml</div><div class="skunote">bung seal, rò rỉ chất</div></div></td>
     </tr><tr>
       <td class="c">5</td>
       
@@ -349,7 +408,10 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
       <td><span class="res part">Đền bù 1 phần</span></td>
       <td class="c">1</td>
       <td class="c">14/08</td>
-      <td class="em">—</td>
+      <td class="em"><div class="ptmain">nguyenntt1</div></td>
+      <td><a class="mono sess" href="https://wms.inshasaki.com/return-order/checking_session/details/1018260813000381" target="_blank" rel="noopener">1018260813000381</a></td>
+      <td class="skucol"><div class="skul"><span class="skub dmg">HƯ HỎNG ×1</span> <span class="mono">422216354</span>
+    <div class="skun">LA ROCHE POSAY EFFACLAR DUO+M 7.5ML MB592400</div><div class="skunote">dán keo và viết số lên bao bì, hư bao bì</div></div></td>
     </tr><tr>
       <td class="c">6</td>
       
@@ -359,7 +421,10 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
       <td><span class="res part">Đền bù 1 phần</span></td>
       <td class="c">1</td>
       <td class="c">15/08</td>
-      <td class="em">—</td>
+      <td class="em"><div class="ptmain">nguyenntt1</div></td>
+      <td><a class="mono sess" href="https://wms.inshasaki.com/return-order/checking_session/details/1018260813000708" target="_blank" rel="noopener">1018260813000708</a></td>
+      <td class="skucol"><div class="skul"><span class="skub dmg">HƯ HỎNG ×1</span> <span class="mono">249500011</span>
+    <div class="skun">sunplay Sữa chống nắng (Super Block SPF81) 70g</div><div class="skunote">SP RÁCH BAO BÌ</div></div></td>
     </tr><tr>
       <td class="c">7</td>
       
@@ -369,7 +434,10 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
       <td><span class="res part">Đền bù 1 phần</span></td>
       <td class="c">1</td>
       <td class="c">16/08</td>
-      <td class="em">—</td>
+      <td class="em"><div class="ptmain">nguyenntt1</div></td>
+      <td><a class="mono sess" href="https://wms.inshasaki.com/return-order/checking_session/details/1018260814000912" target="_blank" rel="noopener">1018260814000912</a></td>
+      <td class="skucol"><div class="skul"><span class="skub dmg">HƯ HỎNG ×1</span> <span class="mono">422207325</span>
+    <div class="skun">LIFEBUOY Sữa Tắm Trà Xanh Khổ Qua 800G/12 Chai</div><div class="skunote">SP DÍNH VÒI, DƠ BAO BÌ</div></div></td>
     </tr><tr>
       <td class="c">8</td>
       
@@ -379,7 +447,10 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
       <td><span class="res part">Đền bù 1 phần</span></td>
       <td class="c">1</td>
       <td class="c">17/08</td>
-      <td class="em">—</td>
+      <td class="em"><div class="ptmain">nguyenntt1</div><div class="ptsub">chốt KQ: hienpt2</div></td>
+      <td><a class="mono sess" href="https://wms.inshasaki.com/return-order/checking_session/details/1018260814000957" target="_blank" rel="noopener">1018260814000957</a></td>
+      <td class="skucol"><div class="skul"><span class="skub dmg">HƯ HỎNG ×1</span> <span class="mono">422266773</span>
+    <div class="skun">Hotosu Anti-Static Detangler Brush, Pink (8587_Pink Electroplated)</div><div class="skunote">mất seal, đã sử dụng có dính tóc</div></div></td>
     </tr></tbody></table></div>
 </section>
 
@@ -388,7 +459,8 @@ footer code{background:#eceff5;padding:1px 5px;border-radius:4px;font-size:11px}
 <ul>
 <li>Nguồn: file export <code>Marketplace_Complaint_2026_08_18_08_46_1.xlsx</code>, lọc theo <b>Ngày tạo case</b> trong kỳ 10–16/08/2026, kho <b>SHOP - 170 QUOC LO 1A</b>.</li>
 <li><b>Đền bù một phần</b> được xếp vào nhóm thất bại; cột Nguyên nhân để dấu <code>—</code>.</li>
-<li>Cột <b>Người khiếu nại</b> lấy từ trường <i>Assigned To</i> của case; file export kỳ này để trống ở phần lớn dòng nên hiển thị <code>—</code>.</li>
+<li>Cột <b>SKU hư hỏng / không nhận</b> lấy từ <b>phiên kiểm hàng trả</b> của chính đơn đó trên WMS (bảng nội dung hàng trả → chi tiết từng SL kiểm), giữ đúng nhãn tình trạng của phiên kiểm: <b>HƯ HỎNG</b> = damaged, <b>KHÔNG NHẬN</b> = not received. Dòng ghi chú xám là ghi chú của nhân viên kiểm. SKU tình trạng <i>MỚI</i> không liệt kê. Cột <b>Phiên kiểm</b> link tới phiên kiểm tương ứng trên WMS.</li>
+<li>Cột <b>Người phụ trách KN</b>: trường <i>NV phụ trách</i> trên WMS đang <b>trống ở toàn bộ đơn thất bại kỳ này</b>, nên lấy người thực hiện từ <b>lịch sử khiếu nại</b> của case — dòng chính là người <b>gửi khiếu nại lần cuối</b>, dòng xám bên dưới ghi thêm người <i>ôm case</i> và người <i>chốt kết quả</i> khi khác người đó. Tên viết tắt bỏ hậu tố <code>@hasaki.vn</code>.</li>
 <li>So sánh dùng kỳ liền trước <b>03/08 – 09/08/2026</b> (cùng cách lọc, tính lại trên cùng file export ngày 18/08 nên số đã chốt đầy đủ hơn bản báo cáo tuần trước).</li>
 <li><b>Kỳ 10–16/08 chưa chốt xong:</b> còn 70 đơn đang khiếu nại (Shopee 29 · TikTok 41) chưa có kết quả và không đưa vào tỉ lệ. Kỳ so sánh 03–09/08 đã chốt gần hết, nên phần so sánh của TikTok mang tính tham khảo.</li>
 <li><b>Hiệu chỉnh thủ công (áp cho kỳ so sánh 03–09/08, giữ nguyên như báo cáo tuần trước):</b> 6 đơn được chốt lại là <b>khiếu nại thành công</b> — Shopee <code>SPXVN067126232138</code>, <code>SPXVN062072982637</code>, <code>SPXVN060401688828</code>, <code>SPXVN063708556448</code>; TikTok <code>854153678270</code>, <code>VTPVN9046244724</code>. Đơn <code>SPXVN061277417747</code> (Shopee) <b>loại khỏi báo cáo</b> do nhân viên ghi nhận thông tin sai. </li>
