@@ -90,16 +90,29 @@ footer{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);color:v
 
 .shell{max-width:1440px;margin:0 auto;padding-inline:20px;display:grid;grid-template-columns:200px minmax(0,1fr);gap:28px}
 .shell .wrap{max-width:1180px;margin:0;padding:28px 0 60px;min-width:0}
-.side{position:sticky;top:env(safe-area-inset-top,0px);align-self:start;padding-top:96px;display:flex;flex-direction:column;gap:6px}
-.sidet{font-size:11.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin:10px 0 2px;font-weight:600}
-.pbtn{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:2px;padding:9px 12px;border-radius:8px;border:1px solid var(--line);background:#fff;color:#20262f}
-.pbtn:hover{border-color:#b8c3da}
-.pbtn:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
-.pbtn.on{background:var(--navy);border-color:var(--navy);color:#fff}
-.pn{font-weight:600;font-size:14px;font-variant-numeric:tabular-nums}
+.side{position:sticky;top:env(safe-area-inset-top,0px);align-self:start;padding-top:96px;display:flex;flex-direction:column;gap:10px}
+.now{padding:10px 12px;border-radius:8px;background:var(--navy);color:#fff}
+.nowl{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:#c9d5ee}
+.nown{font-weight:600;font-size:14px;margin-top:2px;font-variant-numeric:tabular-nums}
+.mg{border:1px solid var(--line);border-radius:8px;background:#fff}
+.mg summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;padding:9px 12px;font-weight:600;color:var(--navy)}
+.mg summary::-webkit-details-marker{display:none}
+.mg summary::before{content:'';width:6px;height:6px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);transition:transform .15s;flex:none;margin-right:2px}
+.mg[open] summary::before{transform:rotate(45deg)}
+.mg summary:focus-visible{outline:2px solid var(--navy);outline-offset:2px;border-radius:8px}
+.mgn{flex:1}
+.mgc{font-size:11.5px;font-weight:400;color:var(--muted)}
+.mlist{display:flex;flex-direction:column;border-top:1px solid var(--line);padding:4px}
+.pbtn{all:unset;box-sizing:border-box;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 10px;border-radius:6px;color:#20262f;font-size:13.5px}
+.pbtn:hover{background:#eef2f9}
+.pbtn:focus-visible{outline:2px solid var(--navy);outline-offset:1px}
+.pbtn.on{background:var(--navy);color:#fff}
+.pn{display:flex;align-items:center;gap:6px;font-variant-numeric:tabular-nums}
 .pm{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
 .pbtn.on .pm{color:#c9d5ee}
-.chg{display:inline-block;margin-left:2px;padding:0 6px;border-radius:99px;background:#fff3d0;color:#8a6a00;font-size:10.5px;font-weight:700}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#e0a800}
+.legend{font-size:11.5px;color:var(--muted);display:flex;align-items:center;gap:6px;padding-inline:4px}
+@media (prefers-reduced-motion:reduce){.mg summary::before{transition:none}}
 .tbl.wk{min-width:720px}
 .tbl th.n,.tbl td.n{text-align:right;font-variant-numeric:tabular-nums}
 .tbl td.n.bad{color:var(--bad);font-weight:600}
@@ -107,28 +120,28 @@ footer{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);color:v
 .qty{font-size:11.5px;color:var(--muted);font-weight:600}
 @media(max-width:1000px){
  .shell{grid-template-columns:minmax(0,1fr);gap:0;padding-inline:16px}
- .side{position:static;padding-top:18px;flex-direction:row;overflow-x:auto;gap:8px;padding-bottom:4px}
- .sidet{display:none}
- .pbtn{flex:0 0 auto}
+ .side{position:static;padding-top:18px}
  .shell .wrap{padding-top:14px}
 }
 </style>
 <div class="shell">
 <nav class="side" aria-label="Chọn kỳ báo cáo">
-  <div class="sidet">Theo tháng</div>
-  <button type="button" class="pbtn" data-p="thang-9" id="nav-thang-9" aria-pressed="false">
-  <span class="pn">Tháng 9/2026</span>
-  <span class="pm">96,3% · 1008 KQ</span></button>
-  <div class="sidet">Theo tuần</div>
-  <button type="button" class="pbtn on" data-p="tuan-21-09" id="nav-tuan-21-09" aria-pressed="true">
+  <div class="now"><div class="nowl">Đang xem</div><div class="nown" id="nown">Tuần 21/09 – 27/09</div></div>
+  <details class="mg">
+  <summary><span class="mgn">Tháng 9/2026</span><span class="mgc">4 tuần</span></summary>
+  <div class="mlist"><button type="button" class="pbtn" data-p="thang-9" id="nav-thang-9" aria-pressed="false" data-name="Cả tháng 9/2026">
+  <span class="pn">Cả tháng</span>
+  <span class="pm">96,3%</span></button><button type="button" class="pbtn on" data-p="tuan-21-09" id="nav-tuan-21-09" aria-pressed="true" data-name="Tuần 21/09 – 27/09">
   <span class="pn">21/09 – 27/09</span>
-  <span class="pm">96,7% · 213 KQ</span></button><button type="button" class="pbtn" data-p="tuan-14-09" id="nav-tuan-14-09" aria-pressed="false">
-  <span class="pn">14/09 – 20/09</span>
-  <span class="pm">94,5% · 311 KQ <span class="chg">đã cập nhật</span></span></button><button type="button" class="pbtn" data-p="tuan-07-09" id="nav-tuan-07-09" aria-pressed="false">
-  <span class="pn">07/09 – 13/09</span>
-  <span class="pm">97,7% · 299 KQ <span class="chg">đã cập nhật</span></span></button><button type="button" class="pbtn" data-p="tuan-31-08" id="nav-tuan-31-08" aria-pressed="false">
-  <span class="pn">31/08 – 06/09</span>
-  <span class="pm">96,8% · 219 KQ <span class="chg">đã cập nhật</span></span></button>
+  <span class="pm">96,7%</span></button><button type="button" class="pbtn" data-p="tuan-14-09" id="nav-tuan-14-09" aria-pressed="false" data-name="Tuần 14/09 – 20/09">
+  <span class="pn">14/09 – 20/09<i class="dot" title="Đã cập nhật so với bản phát hành"></i></span>
+  <span class="pm">94,5%</span></button><button type="button" class="pbtn" data-p="tuan-07-09" id="nav-tuan-07-09" aria-pressed="false" data-name="Tuần 07/09 – 13/09">
+  <span class="pn">07/09 – 13/09<i class="dot" title="Đã cập nhật so với bản phát hành"></i></span>
+  <span class="pm">97,7%</span></button><button type="button" class="pbtn" data-p="tuan-31-08" id="nav-tuan-31-08" aria-pressed="false" data-name="Tuần 31/08 – 06/09">
+  <span class="pn">31/08 – 06/09<i class="dot" title="Đã cập nhật so với bản phát hành"></i></span>
+  <span class="pm">96,8%</span></button></div>
+  </details>
+  <div class="legend"><i class="dot"></i> số đã cập nhật so với bản phát hành</div>
 </nav>
 <div class="wrap">
 <h1>Báo cáo Khiếu nại sàn</h1>
@@ -2235,7 +2248,7 @@ footer{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);color:v
   function show(id){
     if(ids.indexOf(id)<0) id='tuan-21-09';
     document.querySelectorAll('section.period').forEach(function(s){s.hidden=s.getAttribute('data-p')!==id;});
-    document.querySelectorAll('.pbtn').forEach(function(b){var on=b.getAttribute('data-p')===id;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on);});
+    document.querySelectorAll('.pbtn').forEach(function(b){var on=b.getAttribute('data-p')===id;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on);if(on){var n=document.getElementById('nown');if(n)n.textContent=b.getAttribute('data-name');}});
   }
   document.querySelectorAll('.pbtn').forEach(function(b){b.addEventListener('click',function(){var id=b.getAttribute('data-p');show(id);try{history.replaceState(null,'','#'+id);}catch(e){location.hash=id;}window.scrollTo(0,0);});});
   show((location.hash||'').slice(1));
