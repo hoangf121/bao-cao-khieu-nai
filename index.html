@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>Khiếu nại sàn 21/09–27/09</title>
+<title>Khiếu nại sàn tháng 9</title>
 </head>
 <body>
 <style>
@@ -87,42 +87,83 @@ a:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--navy);outline-o
 .empty{color:var(--muted);font-style:italic}
 footer{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
 @media(max-width:640px){.rnums .big{font-size:42px}h1{font-size:24px}}
+
+.shell{max-width:1440px;margin:0 auto;padding-inline:20px;display:grid;grid-template-columns:200px minmax(0,1fr);gap:28px}
+.shell .wrap{max-width:1180px;margin:0;padding:28px 0 60px;min-width:0}
+.side{position:sticky;top:env(safe-area-inset-top,0px);align-self:start;padding-top:96px;display:flex;flex-direction:column;gap:6px}
+.sidet{font-size:11.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin:10px 0 2px;font-weight:600}
+.pbtn{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:2px;padding:9px 12px;border-radius:8px;border:1px solid var(--line);background:#fff;color:#20262f}
+.pbtn:hover{border-color:#b8c3da}
+.pbtn:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
+.pbtn.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.pn{font-weight:600;font-size:14px;font-variant-numeric:tabular-nums}
+.pm{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.pbtn.on .pm{color:#c9d5ee}
+.chg{display:inline-block;margin-left:2px;padding:0 6px;border-radius:99px;background:#fff3d0;color:#8a6a00;font-size:10.5px;font-weight:700}
+.tbl.wk{min-width:720px}
+.tbl th.n,.tbl td.n{text-align:right;font-variant-numeric:tabular-nums}
+.tbl td.n.bad{color:var(--bad);font-weight:600}
+.wnote{font-size:11.5px;color:var(--muted)}
+.qty{font-size:11.5px;color:var(--muted);font-weight:600}
+@media(max-width:1000px){
+ .shell{grid-template-columns:minmax(0,1fr);gap:0;padding-inline:16px}
+ .side{position:static;padding-top:18px;flex-direction:row;overflow-x:auto;gap:8px;padding-bottom:4px}
+ .sidet{display:none}
+ .pbtn{flex:0 0 auto}
+ .shell .wrap{padding-top:14px}
+}
 </style>
+<div class="shell">
+<nav class="side" aria-label="Chọn kỳ báo cáo">
+  <div class="sidet">Theo tháng</div>
+  <button type="button" class="pbtn" data-p="thang-9" id="nav-thang-9" aria-pressed="false">
+  <span class="pn">Tháng 9/2026</span>
+  <span class="pm">96,3% · 1008 KQ</span></button>
+  <div class="sidet">Theo tuần</div>
+  <button type="button" class="pbtn on" data-p="tuan-21-09" id="nav-tuan-21-09" aria-pressed="true">
+  <span class="pn">21/09 – 27/09</span>
+  <span class="pm">96,7% · 213 KQ</span></button><button type="button" class="pbtn" data-p="tuan-14-09" id="nav-tuan-14-09" aria-pressed="false">
+  <span class="pn">14/09 – 20/09</span>
+  <span class="pm">94,5% · 311 KQ <span class="chg">đã cập nhật</span></span></button><button type="button" class="pbtn" data-p="tuan-07-09" id="nav-tuan-07-09" aria-pressed="false">
+  <span class="pn">07/09 – 13/09</span>
+  <span class="pm">97,7% · 299 KQ <span class="chg">đã cập nhật</span></span></button><button type="button" class="pbtn" data-p="tuan-31-08" id="nav-tuan-31-08" aria-pressed="false">
+  <span class="pn">31/08 – 06/09</span>
+  <span class="pm">96,8% · 219 KQ <span class="chg">đã cập nhật</span></span></button>
+</nav>
 <div class="wrap">
 <h1>Báo cáo Khiếu nại sàn</h1>
+<p class="rule">Tỉ lệ tính trên <b>đơn đã có kết quả</b> (thành công + thất bại + đền bù một phần). Đơn <i>đang khiếu nại / đang xử lý</i> và đơn <i>không cần khiếu nại</i> không đưa vào tỉ lệ. Đơn <i>hoàn tiền ngay</i> (không có hàng hoàn về kho) <b>không đưa vào báo cáo</b>. Đơn <i>đền bù một phần</i> được tính là thất bại. Mọi kỳ đều tính lại từ cùng một file export mới nhất (29/09/2026 09:07).</p>
+<section class="period" id="p-tuan-21-09" data-p="tuan-21-09">
 <p class="sub">Kỳ báo cáo: <b>21/09 – 27/09/2026</b> · Kho 170 Quốc Lộ 1A · Sàn Shopee + TikTok</p>
-<p class="rule">Tỉ lệ tính trên <b>đơn đã có kết quả</b> (thành công + thất bại + đền bù một phần). Đơn <i>đang khiếu nại / đang xử lý</i> và đơn <i>không cần khiếu nại</i> không đưa vào tỉ lệ. Đơn <i>hoàn tiền ngay</i> (không có hàng hoàn về kho) <b>không đưa vào báo cáo</b>. Đơn <i>đền bù một phần</i> được tính là thất bại.</p>
-
-<div class="snap"><b>Lưu ý — số liệu snapshot chốt tới 29/09/2026 09:07.</b> Kỳ này còn <b>81 đơn (27.6%)</b> đang xử lý chưa có kết quả nên tỉ lệ thành công/thất bại còn có thể thay đổi khi các đơn này chốt. Tuần so sánh 14/09 – 20/09 chỉ còn 16 đơn đang xử lý nên đã tương đối ổn định.</div>
+<div class="snap"><b>Số liệu cập nhật tới 29/09/2026 09:07.</b> Kỳ này còn <b>81 đơn (27,6%)</b> đang xử lý chưa có kết quả nên tỉ lệ còn có thể thay đổi khi các đơn này chốt.</div>
 
 <h2>TỔNG – Cả 2 sàn</h2>
-<div class="kpis"><div class="kpi"><div class="kn">518</div><div class="kl">Đơn phát sinh trong kỳ</div><div class="ks">Shopee 292 · TikTok 226</div></div><div class="kpi"><div class="kn">213</div><div class="kl">Đơn đã có kết quả</div><div class="ks">Shopee 125 · TikTok 88</div></div><div class="kpi"><div class="kn">206</div><div class="kl">Khiếu nại thành công</div><div class="ks">96.7% trên đơn đã có KQ</div></div><div class="kpi bad"><div class="kn">7</div><div class="kl">Khiếu nại thất bại*</div><div class="ks">TB 4 + đền bù 1 phần 3</div></div></div>
+<div class="kpis"><div class="kpi"><div class="kn">518</div><div class="kl">Đơn phát sinh trong kỳ</div><div class="ks">Shopee 292 · TikTok 226</div></div><div class="kpi"><div class="kn">213</div><div class="kl">Đơn đã có kết quả</div><div class="ks">Shopee 125 · TikTok 88</div></div><div class="kpi"><div class="kn">206</div><div class="kl">Khiếu nại thành công</div><div class="ks">96,7% trên đơn đã có KQ</div></div><div class="kpi bad"><div class="kn">7</div><div class="kl">Khiếu nại thất bại*</div><div class="ks">TB 4 + đền bù 1 phần 3</div></div></div>
 <div class="ratio">
   <div class="rtitle">Tỉ lệ trên đơn đã có kết quả: <b>213</b> đơn</div>
-  <div class="rnums"><span class="big">96.7%</span><span class="lbl">thành công</span>
-   <span class="small">3.3%</span><span class="lbl red">thất bại</span></div>
+  <div class="rnums"><span class="big">96,7%</span><span class="lbl">thành công</span>
+   <span class="small">3,3%</span><span class="lbl red">thất bại</span></div>
   <div class="bar"><span style="width:96.7%"></span><i style="width:3.3%"></i></div>
   <div class="rsub">206 thành công · 7 thất bại (TB 4 + đền bù 1 phần 3) — không tính 81 đơn đang xử lý và 224 đơn không cần khiếu nại</div>
   </div>
 <h3>So với tuần (14/09 – 20/09)</h3>
 <div class="cmps"><div class="cmp sp">
    <div class="cmph">Shopee</div>
-   <div class="cmprow"><span class="cmpk">Kỳ này (21/09–27/09)</span><span class="cmpv">98.4%</span></div>
-   <div class="cmprow prev"><span class="cmpk">Tuần trước (14/09 – 20/09)</span><span class="cmpv">98.8%</span></div>
-   <div class="cmpd down">▼ -0.4 điểm · thất bại 2 → 2 đơn</div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (21/09–27/09)</span><span class="cmpv">98,4%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tuần trước (14/09–20/09)</span><span class="cmpv">98,8%</span></div>
+   <div class="cmpd down">▼ -0,4 điểm · thất bại 2 → 2 đơn</div>
    <div class="cmpn">125 đơn có KQ (tuần trước 171)</div>
   </div><div class="cmp tk">
    <div class="cmph">TikTok</div>
-   <div class="cmprow"><span class="cmpk">Kỳ này (21/09–27/09)</span><span class="cmpv">94.3%</span></div>
-   <div class="cmprow prev"><span class="cmpk">Tuần trước (14/09 – 20/09)</span><span class="cmpv">89.3%</span></div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (21/09–27/09)</span><span class="cmpv">94,3%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tuần trước (14/09–20/09)</span><span class="cmpv">89,3%</span></div>
    <div class="cmpd up">▲ +5 điểm · thất bại 15 → 5 đơn</div>
    <div class="cmpn">88 đơn có KQ (tuần trước 140)</div>
   </div></div>
 
+
 <h2>1 – Tổng hợp đơn thất bại cả 2 sàn</h2>
-<div class="fcauses">
-<div class="fcause"><div class="fn">4</div><div class="fl">Chưa chứng minh nguyên vẹn</div><div class="fm">Shopee 1 · TikTok 3</div></div><div class="fcause soft"><div class="fn">3</div><div class="fl">Đền bù 1 phần</div><div class="fm">Shopee 1 · TikTok 2</div></div>
-</div>
+<div class="fcauses"><div class="fcause"><div class="fn">4</div><div class="fl">Chưa chứng minh nguyên vẹn</div><div class="fm">Shopee 1 · TikTok 3</div></div><div class="fcause soft"><div class="fn">3</div><div class="fl">Đền bù 1 phần</div><div class="fm">Shopee 1 · TikTok 2</div></div></div>
 <div class="tw"><table class="tbl">
   <thead><tr><th>#</th><th>Sàn</th><th>Ngày tạo</th><th>Mã vận đơn</th><th>Nguyên nhân</th><th>Kết quả</th><th>Vòng</th>
   <th>SKU hư hỏng / không nhận</th><th>Ngày chốt KQ</th><th>Người khiếu nại</th></tr></thead><tbody>
@@ -207,19 +248,19 @@ footer{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);color:v
   </tbody></table></div>
 
 <h2>2 – SHOPEE</h2>
-<div class="kpis"><div class="kpi"><div class="kn">125</div><div class="kl">Đơn đã có kết quả</div></div><div class="kpi"><div class="kn">123</div><div class="kl">Khiếu nại thành công</div><div class="ks">98.4%</div></div><div class="kpi bad"><div class="kn">2</div><div class="kl">Khiếu nại thất bại*</div><div class="ks">TB 1 + đền bù 1 phần 1</div></div></div>
+<div class="kpis"><div class="kpi"><div class="kn">125</div><div class="kl">Đơn đã có kết quả</div></div><div class="kpi"><div class="kn">123</div><div class="kl">Khiếu nại thành công</div><div class="ks">98,4%</div></div><div class="kpi bad"><div class="kn">2</div><div class="kl">Khiếu nại thất bại*</div><div class="ks">TB 1 + đền bù 1 phần 1</div></div></div>
 <div class="ratio">
   <div class="rtitle">Tỉ lệ trên đơn đã có kết quả: <b>125</b> đơn</div>
-  <div class="rnums"><span class="big">98.4%</span><span class="lbl">thành công</span>
-   <span class="small">1.6%</span><span class="lbl red">thất bại</span></div>
+  <div class="rnums"><span class="big">98,4%</span><span class="lbl">thành công</span>
+   <span class="small">1,6%</span><span class="lbl red">thất bại</span></div>
   <div class="bar"><span style="width:98.4%"></span><i style="width:1.6%"></i></div>
   <div class="rsub">123 thành công · 2 thất bại (TB 1 + đền bù 1 phần 1) — không tính 28 đơn đang xử lý và 139 đơn không cần khiếu nại</div>
   </div>
 <div class="cmps"><div class="cmp sp">
    <div class="cmph">Shopee</div>
-   <div class="cmprow"><span class="cmpk">Kỳ này (21/09–27/09)</span><span class="cmpv">98.4%</span></div>
-   <div class="cmprow prev"><span class="cmpk">Tuần trước (14/09 – 20/09)</span><span class="cmpv">98.8%</span></div>
-   <div class="cmpd down">▼ -0.4 điểm · thất bại 2 → 2 đơn</div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (21/09–27/09)</span><span class="cmpv">98,4%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tuần trước (14/09–20/09)</span><span class="cmpv">98,8%</span></div>
+   <div class="cmpd down">▼ -0,4 điểm · thất bại 2 → 2 đơn</div>
    <div class="cmpn">125 đơn có KQ (tuần trước 171)</div>
   </div></div>
 <h3>Chi tiết đơn thất bại – Shopee</h3>
@@ -252,18 +293,18 @@ footer{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);color:v
   </tbody></table></div>
 
 <h2>3 – TIKTOK</h2>
-<div class="kpis"><div class="kpi"><div class="kn">88</div><div class="kl">Đơn đã có kết quả</div></div><div class="kpi"><div class="kn">83</div><div class="kl">Khiếu nại thành công</div><div class="ks">94.3%</div></div><div class="kpi bad"><div class="kn">5</div><div class="kl">Khiếu nại thất bại*</div><div class="ks">TB 3 + đền bù 1 phần 2</div></div></div>
+<div class="kpis"><div class="kpi"><div class="kn">88</div><div class="kl">Đơn đã có kết quả</div></div><div class="kpi"><div class="kn">83</div><div class="kl">Khiếu nại thành công</div><div class="ks">94,3%</div></div><div class="kpi bad"><div class="kn">5</div><div class="kl">Khiếu nại thất bại*</div><div class="ks">TB 3 + đền bù 1 phần 2</div></div></div>
 <div class="ratio">
   <div class="rtitle">Tỉ lệ trên đơn đã có kết quả: <b>88</b> đơn</div>
-  <div class="rnums"><span class="big">94.3%</span><span class="lbl">thành công</span>
-   <span class="small">5.7%</span><span class="lbl red">thất bại</span></div>
+  <div class="rnums"><span class="big">94,3%</span><span class="lbl">thành công</span>
+   <span class="small">5,7%</span><span class="lbl red">thất bại</span></div>
   <div class="bar"><span style="width:94.3%"></span><i style="width:5.7%"></i></div>
   <div class="rsub">83 thành công · 5 thất bại (TB 3 + đền bù 1 phần 2) — không tính 53 đơn đang xử lý và 85 đơn không cần khiếu nại</div>
   </div>
 <div class="cmps"><div class="cmp tk">
    <div class="cmph">TikTok</div>
-   <div class="cmprow"><span class="cmpk">Kỳ này (21/09–27/09)</span><span class="cmpv">94.3%</span></div>
-   <div class="cmprow prev"><span class="cmpk">Tuần trước (14/09 – 20/09)</span><span class="cmpv">89.3%</span></div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (21/09–27/09)</span><span class="cmpv">94,3%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tuần trước (14/09–20/09)</span><span class="cmpv">89,3%</span></div>
    <div class="cmpd up">▲ +5 điểm · thất bại 15 → 5 đơn</div>
    <div class="cmpn">88 đơn có KQ (tuần trước 140)</div>
   </div></div>
@@ -329,21 +370,1877 @@ footer{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);color:v
     </tr>
   </tbody></table></div>
 
-<div class="note"><b>Ghi chú</b>
-<ul>
-<li><b>Đơn hoàn tiền ngay (không có hàng hoàn về kho) đã được loại khỏi báo cáo</b> theo quy ước: kỳ này <b>19 đơn</b> (toàn bộ là Shopee — 8 thắng, 5 thua, 4 không cần KN, 2 đang xử lý). Tuần so sánh loại 46 đơn cùng loại, để hai kỳ so ngang nhau.</li>
-<li><b>Snapshot:</b> số liệu chốt tới 29/09/2026 09:07; kỳ này còn <b>81 đơn (27.6% số đơn cần khiếu nại)</b> đang xử lý — Đã khiếu nại 41, Chờ Vận hành KN lại 20, Đã đóng hàng trả 10, Chờ mã VĐ trả hàng 5, Chờ đóng hàng trả 3, Cần bổ sung bằng chứng 1, Đang chuẩn bị KN 1. Tỷ lệ này vượt mốc 20% nên tỉ lệ thành công/thất bại <b>còn có thể thay đổi đáng kể</b> khi các đơn này chốt.</li>
-<li><b>22 đơn đang bị sàn xử <i>Vô lý (sàn vô lý)</i></b> nhưng chưa chốt (Shopee 19 + TikTok 1 đang <i>Chờ Vận hành KN lại</i>, 1 Shopee đã khiếu nại lại, 1 TikTok đang chuẩn bị KN) nên chưa vào tỉ lệ. Nếu nhóm này chốt thua, tỉ lệ thất bại của Shopee sẽ tăng mạnh.</li>
-<li><b>Không cần khiếu nại:</b> 224 đơn (Shopee 139 · TikTok 85) — loại khỏi báo cáo theo quy ước.</li>
-<li><b>Số tuần trước (14/09 – 20/09) khác với báo cáo đã phát hành:</b> bản chốt ngày 22/09 ghi <b>271 đơn có kết quả / 95,2% thành công</b> (Shopee 98,8% · TikTok 90,1%). Tới nay tuần đó đã chốt thêm (còn 16 đơn treo) → <b>311 đơn có kết quả / 94.5% thành công</b> (Shopee 98.8% · TikTok 89.3%). Số tuần trước đã giữ nguyên các hiệu chỉnh user chốt ngày 22/09 (loại 4 đơn Vô lý, chuyển 3 đơn đền bù một phần thành thắng). Bảng so sánh dùng số đã cập nhật này.</li>
-<li><b>Người khiếu nại:</b> cột <code>Assigned To</code> của file export trống toàn bộ, và API chi tiết case của WMS không còn trả lịch sử gửi khiếu nại. Với 7 đơn thất bại (đều do hệ thống tự tạo, <code>created_by = api@hasaki.vn</code>) cột này lấy <b>người theo dõi / chốt kết quả</b> (<code>last_tracked_by</code>).</li>
-<li><b>SKU hư hỏng / không nhận</b> lấy từ phiên kiểm hàng trả của từng đơn, kèm nguyên văn ghi chú của nhân viên kiểm. Kỳ này có <b>7 dòng SKU</b>: <b>4 HƯ HỎNG</b> (trên 4 đơn) và <b>3 KHÔNG NHẬN</b> (trên 3 đơn — khách không hoàn hoặc hoàn sai sản phẩm).</li>
-<li><b>Nguyên nhân thất bại</b>: <b>Chưa chứng minh nguyên vẹn</b> 4 đơn (Shopee 1 · TikTok 3) và <b>đền bù một phần</b> 3 đơn (Shopee 1 · TikTok 2). Kỳ này <b>không có đơn nào thua vì ĐG sai quy cách</b> — nhóm lớn nhất tuần trước (7 đơn).</li>
-<li><b>3 đơn đền bù một phần cần duyệt</b> (các kỳ trước user thường chuyển nhóm này thành thắng): TikTok <code>854160031197</code> (Selsun — HƯ HỎNG “SP RÁCH BAO BÌ”), TikTok <code>854161044511</code> (Cocoon nước tẩy trang — KHÔNG NHẬN “KH HOÀN SAI SP”), Shopee <code>SPXVN068333129069</code> (Lifebuoy sữa tắm — KHÔNG NHẬN “K HOÀN”).</li>
-<li>Ngoài quy tắc loại đơn hoàn tiền ngay, kỳ này <b>không có hiệu chỉnh thủ công</b> nào theo từng mã đơn.</li>
-</ul></div>
-
+<div class="note"><b>Ghi chú</b><ul><li><b>Đơn hoàn tiền ngay (không có hàng hoàn về kho) đã được loại khỏi báo cáo</b> theo quy ước: kỳ này <b>19 đơn</b> (Shopee 19: 8 thắng, 5 thua, 4 không cần KN, 2 đang xử lý). Kỳ so sánh loại 46 đơn cùng loại.</li><li><b>Đang xử lý:</b> còn 81 đơn (27,6% số đơn cần khiếu nại) — Đã khiếu nại 41, Chờ Vận hành KN lại 20, Đã đóng hàng trả 10, Chờ mã VĐ trả hàng 5, Chờ đóng hàng trả 3, Cần bổ sung bằng chứng 1, Đang chuẩn bị KN 1. Các đơn này chưa vào tỉ lệ.</li><li><b>22 đơn đang bị sàn xử <i>Vô lý (sàn vô lý)</i> nhưng chưa chốt</b> (Shopee 20 · TikTok 2) nên chưa vào tỉ lệ.</li><li><b>Không cần khiếu nại:</b> 224 đơn (Shopee 139 · TikTok 85) — không đưa vào tỉ lệ.</li><li><b>Số liệu không đổi</b> so với bản đã phát hành ngày 29/09 (213 đơn có KQ / 96,7%).</li><li>Kỳ này <b>không có hiệu chỉnh thủ công</b> nào theo từng mã đơn.</li><li><b>Người khiếu nại:</b> cột <code>Assigned To</code> của file export trống, và WMS không còn trả lịch sử gửi khiếu nại, nên cột này lấy <b>người theo dõi / chốt kết quả</b> của case (hoặc người tạo case nếu do nhân viên tạo tay).</li><li><b>SKU hư hỏng / không nhận</b> lấy từ phiên kiểm hàng trả, kèm nguyên văn ghi chú của nhân viên kiểm: 7 dòng — 4 HƯ HỎNG, 3 KHÔNG NHẬN.</li><li><b>Đơn đền bù một phần (tính thất bại):</b> TikTok <code>854160031197</code>, TikTok <code>854161044511</code>, Shopee <code>SPXVN068333129069</code>.</li></ul></div>
 <footer>Tạo tự động từ <code>Marketplace_Complaint_2026_09_29_09_07_1.xlsx</code> · Kỳ 21/09 – 27/09/2026 · Kho 170 Quốc Lộ 1A · Dữ liệu chốt 29/09/2026 09:07</footer>
+</section>
+<section class="period" id="p-tuan-14-09" data-p="tuan-14-09" hidden>
+<p class="sub">Kỳ báo cáo: <b>14/09 – 20/09/2026</b> · Kho 170 Quốc Lộ 1A · Sàn Shopee + TikTok</p>
+<div class="snap"><b>Số liệu cập nhật tới 29/09/2026 09:07.</b> Kỳ này còn <b>16 đơn (4,9%)</b> đang xử lý chưa có kết quả nên tỉ lệ còn có thể thay đổi khi các đơn này chốt. <b>Đã khác bản phát hành ngày 22/09</b> (271 đơn có KQ / 95,2%) — xem Ghi chú.</div>
+
+<h2>TỔNG – Cả 2 sàn</h2>
+<div class="kpis"><div class="kpi"><div class="kn">461</div><div class="kl">Đơn phát sinh trong kỳ</div><div class="ks">Shopee 251 · TikTok 210</div></div><div class="kpi"><div class="kn">311</div><div class="kl">Đơn đã có kết quả</div><div class="ks">Shopee 171 · TikTok 140</div></div><div class="kpi"><div class="kn">294</div><div class="kl">Khiếu nại thành công</div><div class="ks">94,5% trên đơn đã có KQ</div></div><div class="kpi bad"><div class="kn">17</div><div class="kl">Khiếu nại thất bại*</div><div class="ks">TB 15 + đền bù 1 phần 2</div></div></div>
+<div class="ratio">
+  <div class="rtitle">Tỉ lệ trên đơn đã có kết quả: <b>311</b> đơn</div>
+  <div class="rnums"><span class="big">94,5%</span><span class="lbl">thành công</span>
+   <span class="small">5,5%</span><span class="lbl red">thất bại</span></div>
+  <div class="bar"><span style="width:94.5%"></span><i style="width:5.5%"></i></div>
+  <div class="rsub">294 thành công · 17 thất bại (TB 15 + đền bù 1 phần 2) — không tính 16 đơn đang xử lý và 134 đơn không cần khiếu nại</div>
+  </div>
+<h3>So với tuần (07/09 – 13/09)</h3>
+<div class="cmps"><div class="cmp sp">
+   <div class="cmph">Shopee</div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (14/09–20/09)</span><span class="cmpv">98,8%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tuần trước (07/09–13/09)</span><span class="cmpv">100%</span></div>
+   <div class="cmpd down">▼ -1,2 điểm · thất bại 0 → 2 đơn</div>
+   <div class="cmpn">171 đơn có KQ (tuần trước 141)</div>
+  </div><div class="cmp tk">
+   <div class="cmph">TikTok</div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (14/09–20/09)</span><span class="cmpv">89,3%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tuần trước (07/09–13/09)</span><span class="cmpv">95,6%</span></div>
+   <div class="cmpd down">▼ -6,3 điểm · thất bại 7 → 15 đơn</div>
+   <div class="cmpn">140 đơn có KQ (tuần trước 158)</div>
+  </div></div>
+
+
+<h2>1 – Tổng hợp đơn thất bại cả 2 sàn</h2>
+<div class="fcauses"><div class="fcause"><div class="fn">4</div><div class="fl">Chưa chứng minh nguyên vẹn</div><div class="fm">Shopee 1 · TikTok 3</div></div><div class="fcause"><div class="fn">9</div><div class="fl">ĐG sai quy cách</div><div class="fm">Shopee 1 · TikTok 8</div></div><div class="fcause"><div class="fn">2</div><div class="fl">Camera không đủ ĐK</div><div class="fm">Shopee 0 · TikTok 2</div></div><div class="fcause soft"><div class="fn">2</div><div class="fl">Đền bù 1 phần</div><div class="fm">Shopee 0 · TikTok 2</div></div></div>
+<div class="tw"><table class="tbl">
+  <thead><tr><th>#</th><th>Sàn</th><th>Ngày tạo</th><th>Mã vận đơn</th><th>Nguyên nhân</th><th>Kết quả</th><th>Vòng</th>
+  <th>SKU hư hỏng / không nhận</th><th>Ngày chốt KQ</th><th>Người khiếu nại</th></tr></thead><tbody>
+  <tr>
+    <td class="c">1</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">14/09 17:54</td>
+    <td class="mono">854159952163</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>206200005</b> — 98412 SDT DT BAN DEM 350ML <span class="tag dm">HƯ HỎNG</span><div class="skunote">“ĐẦU VÒI DÍNH CHẤT , HAO HỤT DUNG TÍCH”</div></div></td>
+    <td class="c">15/09 20:12</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">2</td>
+    <td><span class="ch sp">Shopee</span></td>
+    <td class="c">15/09 14:04</td>
+    <td class="mono">SPXVN061458766249</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422226630</b> — AVENE CICALFATE+ REPAIRING CREAM 100ml <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“đóng gói đóng thiếu (Người đóng gói: tuyenhn@hasaki.vn)”</div></div></td>
+    <td class="c">16/09 15:42</td>
+    <td class="mono sm">thaottp6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">3</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">16/09 10:00</td>
+    <td class="mono">854159220572</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>200400004</b> — Bioderma - Nước tẩy trang Sebium H2O (Xanh lá) 500ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp mất seal bb dính tóc hh dt”</div></div></td>
+    <td class="c">17/09 09:51</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">4</td>
+    <td><span class="ch sp">Shopee</span></td>
+    <td class="c">16/09 14:04</td>
+    <td class="mono">SPXVN062374179199</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422480390</b> — Black Rouge Air Fit Velvet Lite A109 <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp mất seal”</div></div></td>
+    <td class="c">17/09 13:08</td>
+    <td class="mono sm">hienpt2@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">5</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">16/09 15:18</td>
+    <td class="mono">VTPVN9049017679</td>
+    <td>Camera không đủ ĐK</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>206200005</b> — 98412 SDT DT BAN DEM 350ML <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp dính vòi, hao hụt”</div></div></td>
+    <td class="c">17/09 20:23</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">6</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">16/09 17:18</td>
+    <td class="mono">854159394184</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422210339</b> — Cocoon Nước Dưỡng Tóc Tinh Dầu Bưởi 140ml (Phiên Bản Nâng Cấp) <span class="qty">×2</span> <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“hoàn thiếu”</div></div><div class="sku"><b>422210339</b> — Cocoon Nước Dưỡng Tóc Tinh Dầu Bưởi 140ml (Phiên Bản Nâng Cấp) <span class="qty">×18</span> <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SP RÁCH BAO BÌ”</div></div><div class="sku"><b>308100015</b> — Cocoon Dak Lak Coffee Body Polish 200ml <span class="qty">×7</span> <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“hoàn thiếu”</div></div></td>
+    <td class="c">22/09 14:57</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">7</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">16/09 18:42</td>
+    <td class="mono">VTPVN9042496376</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">2</td>
+    <td class="skucell"><div class="sku"><b>242300001</b> — ETIAXIL Detranspirant Traitement Roll-On 15ml -Peaux Sensibles (Nhãn Xanh Lá) <span class="tag dm">HƯ HỎNG</span><div class="skunote">“KH MỞ SEAL SP, mất bao bì, hao hụt”</div></div></td>
+    <td class="c">24/09 08:14</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">8</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">17/09 13:50</td>
+    <td class="mono">854159686184</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422203617</b> — EmbryolisseeLait Creme Concentre 75Ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp lủng hộp”</div></div></td>
+    <td class="c">22/09 13:22</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">9</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">17/09 14:36</td>
+    <td class="mono">854159543677</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422210339</b> — Cocoon Nước Dưỡng Tóc Tinh Dầu Bưởi 140ml (Phiên Bản Nâng Cấp) <span class="tag dm">HƯ HỎNG</span><div class="skunote">“móp bung đáy hộp bb dơ”</div></div></td>
+    <td class="c">17/09 18:04</td>
+    <td class="mono sm">thaottp6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">10</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">17/09 15:02</td>
+    <td class="mono">854160141412</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422263285</b> — Luvum Slow Aging Phyto Collagen Gel Mask 33g <span class="qty">×3</span> <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp ướt dính nc dơ bb ướt team phụ”</div></div></td>
+    <td class="c">17/09 18:06</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">11</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">17/09 15:08</td>
+    <td class="mono">VTPVN9046859975</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422458630</b> — OAP GB MATTE LUMI CREAM 30ML EBT <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp mất seal chất dính hũ”</div></div></td>
+    <td class="c">17/09 18:10</td>
+    <td class="mono sm">thaottp6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">12</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">17/09 16:39</td>
+    <td class="mono">VTPVN9045148979</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422204576</b> — Chacott for Professionals Cleansing Water 500ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“rách tem phụ, bung seal, rò rỉ chất”</div></div></td>
+    <td class="c">23/09 16:00</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">13</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">18/09 10:32</td>
+    <td class="mono">854159324286</td>
+    <td>Camera không đủ ĐK</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422208974</b> — MB096124 CERAVE FOAMING CLEANSER 88ml (101167968) <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp mất seal chất dính miệng chai”</div></div></td>
+    <td class="c">19/09 09:22</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">14</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">18/09 14:07</td>
+    <td class="mono">854160012626</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422229664</b> — HAZELINE Sữa Tắm Sữa Chua Linh Lan 670g/8 <span class="tag dm">HƯ HỎNG</span><div class="skunote">“RR CHẤT DÍNH MIỆNG VÒI VÀ THÂN CHAI”</div></div></td>
+    <td class="c">20/09 15:51</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">15</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">19/09 14:11</td>
+    <td class="mono">VTPVN9045600586</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422204816</b> — DR BW Damage Hair (Pink_Y19) 120ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SẢN PHẨM BỊ DÍNH CHẤT ĐẦY CHAI”</div></div></td>
+    <td class="c">20/09 08:03</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">16</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">19/09 16:28</td>
+    <td class="mono">854160254456</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422464764</b> — LIFEBUOY SG COFFEE &amp; COCONUT 12X800G <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SP BỊ ĐỔ RA NGOÀI”</div></div></td>
+    <td class="c">20/09 15:58</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">17</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">19/09 16:43</td>
+    <td class="mono">854160139884</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422223263</b> — Beplain Sunmuse lai Vật Lý &amp; Hoá Học Nâng Tone &amp; Hiệu chỉnh da Matte SPF 50+ PA++++ 50mL <span class="tag dm">HƯ HỎNG</span><div class="skunote">“MÓP , NHĂN BAO BÌ”</div></div></td>
+    <td class="c">21/09 08:57</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr>
+  </tbody></table></div>
+
+<h2>2 – SHOPEE</h2>
+<div class="kpis"><div class="kpi"><div class="kn">171</div><div class="kl">Đơn đã có kết quả</div></div><div class="kpi"><div class="kn">169</div><div class="kl">Khiếu nại thành công</div><div class="ks">98,8%</div></div><div class="kpi bad"><div class="kn">2</div><div class="kl">Khiếu nại thất bại*</div><div class="ks">TB 2 + đền bù 1 phần 0</div></div></div>
+<div class="ratio">
+  <div class="rtitle">Tỉ lệ trên đơn đã có kết quả: <b>171</b> đơn</div>
+  <div class="rnums"><span class="big">98,8%</span><span class="lbl">thành công</span>
+   <span class="small">1,2%</span><span class="lbl red">thất bại</span></div>
+  <div class="bar"><span style="width:98.8%"></span><i style="width:1.2%"></i></div>
+  <div class="rsub">169 thành công · 2 thất bại — không tính 9 đơn đang xử lý và 71 đơn không cần khiếu nại</div>
+  </div>
+<div class="cmps"><div class="cmp sp">
+   <div class="cmph">Shopee</div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (14/09–20/09)</span><span class="cmpv">98,8%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tuần trước (07/09–13/09)</span><span class="cmpv">100%</span></div>
+   <div class="cmpd down">▼ -1,2 điểm · thất bại 0 → 2 đơn</div>
+   <div class="cmpn">171 đơn có KQ (tuần trước 141)</div>
+  </div></div>
+<h3>Chi tiết đơn thất bại – Shopee</h3>
+<div class="tw"><table class="tbl">
+  <thead><tr><th>#</th><th>Ngày tạo</th><th>Mã vận đơn</th><th>Nguyên nhân</th><th>Kết quả</th><th>Vòng</th>
+  <th>SKU hư hỏng / không nhận</th><th>Ngày chốt KQ</th><th>Người khiếu nại</th></tr></thead><tbody>
+  <tr>
+    <td class="c">1</td>
+    
+    <td class="c">15/09 14:04</td>
+    <td class="mono">SPXVN061458766249</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422226630</b> — AVENE CICALFATE+ REPAIRING CREAM 100ml <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“đóng gói đóng thiếu (Người đóng gói: tuyenhn@hasaki.vn)”</div></div></td>
+    <td class="c">16/09 15:42</td>
+    <td class="mono sm">thaottp6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">2</td>
+    
+    <td class="c">16/09 14:04</td>
+    <td class="mono">SPXVN062374179199</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422480390</b> — Black Rouge Air Fit Velvet Lite A109 <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp mất seal”</div></div></td>
+    <td class="c">17/09 13:08</td>
+    <td class="mono sm">hienpt2@hasaki.vn</td>
+    </tr>
+  </tbody></table></div>
+
+<h2>3 – TIKTOK</h2>
+<div class="kpis"><div class="kpi"><div class="kn">140</div><div class="kl">Đơn đã có kết quả</div></div><div class="kpi"><div class="kn">125</div><div class="kl">Khiếu nại thành công</div><div class="ks">89,3%</div></div><div class="kpi bad"><div class="kn">15</div><div class="kl">Khiếu nại thất bại*</div><div class="ks">TB 13 + đền bù 1 phần 2</div></div></div>
+<div class="ratio">
+  <div class="rtitle">Tỉ lệ trên đơn đã có kết quả: <b>140</b> đơn</div>
+  <div class="rnums"><span class="big">89,3%</span><span class="lbl">thành công</span>
+   <span class="small">10,7%</span><span class="lbl red">thất bại</span></div>
+  <div class="bar"><span style="width:89.3%"></span><i style="width:10.7%"></i></div>
+  <div class="rsub">125 thành công · 15 thất bại (TB 13 + đền bù 1 phần 2) — không tính 7 đơn đang xử lý và 63 đơn không cần khiếu nại</div>
+  </div>
+<div class="cmps"><div class="cmp tk">
+   <div class="cmph">TikTok</div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (14/09–20/09)</span><span class="cmpv">89,3%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tuần trước (07/09–13/09)</span><span class="cmpv">95,6%</span></div>
+   <div class="cmpd down">▼ -6,3 điểm · thất bại 7 → 15 đơn</div>
+   <div class="cmpn">140 đơn có KQ (tuần trước 158)</div>
+  </div></div>
+<h3>Chi tiết đơn thất bại – TikTok</h3>
+<div class="tw"><table class="tbl">
+  <thead><tr><th>#</th><th>Ngày tạo</th><th>Mã vận đơn</th><th>Nguyên nhân</th><th>Kết quả</th><th>Vòng</th>
+  <th>SKU hư hỏng / không nhận</th><th>Ngày chốt KQ</th><th>Người khiếu nại</th></tr></thead><tbody>
+  <tr>
+    <td class="c">1</td>
+    
+    <td class="c">14/09 17:54</td>
+    <td class="mono">854159952163</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>206200005</b> — 98412 SDT DT BAN DEM 350ML <span class="tag dm">HƯ HỎNG</span><div class="skunote">“ĐẦU VÒI DÍNH CHẤT , HAO HỤT DUNG TÍCH”</div></div></td>
+    <td class="c">15/09 20:12</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">2</td>
+    
+    <td class="c">16/09 10:00</td>
+    <td class="mono">854159220572</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>200400004</b> — Bioderma - Nước tẩy trang Sebium H2O (Xanh lá) 500ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp mất seal bb dính tóc hh dt”</div></div></td>
+    <td class="c">17/09 09:51</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">3</td>
+    
+    <td class="c">16/09 15:18</td>
+    <td class="mono">VTPVN9049017679</td>
+    <td>Camera không đủ ĐK</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>206200005</b> — 98412 SDT DT BAN DEM 350ML <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp dính vòi, hao hụt”</div></div></td>
+    <td class="c">17/09 20:23</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">4</td>
+    
+    <td class="c">16/09 17:18</td>
+    <td class="mono">854159394184</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422210339</b> — Cocoon Nước Dưỡng Tóc Tinh Dầu Bưởi 140ml (Phiên Bản Nâng Cấp) <span class="qty">×2</span> <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“hoàn thiếu”</div></div><div class="sku"><b>422210339</b> — Cocoon Nước Dưỡng Tóc Tinh Dầu Bưởi 140ml (Phiên Bản Nâng Cấp) <span class="qty">×18</span> <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SP RÁCH BAO BÌ”</div></div><div class="sku"><b>308100015</b> — Cocoon Dak Lak Coffee Body Polish 200ml <span class="qty">×7</span> <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“hoàn thiếu”</div></div></td>
+    <td class="c">22/09 14:57</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">5</td>
+    
+    <td class="c">16/09 18:42</td>
+    <td class="mono">VTPVN9042496376</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">2</td>
+    <td class="skucell"><div class="sku"><b>242300001</b> — ETIAXIL Detranspirant Traitement Roll-On 15ml -Peaux Sensibles (Nhãn Xanh Lá) <span class="tag dm">HƯ HỎNG</span><div class="skunote">“KH MỞ SEAL SP, mất bao bì, hao hụt”</div></div></td>
+    <td class="c">24/09 08:14</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">6</td>
+    
+    <td class="c">17/09 13:50</td>
+    <td class="mono">854159686184</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422203617</b> — EmbryolisseeLait Creme Concentre 75Ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp lủng hộp”</div></div></td>
+    <td class="c">22/09 13:22</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">7</td>
+    
+    <td class="c">17/09 14:36</td>
+    <td class="mono">854159543677</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422210339</b> — Cocoon Nước Dưỡng Tóc Tinh Dầu Bưởi 140ml (Phiên Bản Nâng Cấp) <span class="tag dm">HƯ HỎNG</span><div class="skunote">“móp bung đáy hộp bb dơ”</div></div></td>
+    <td class="c">17/09 18:04</td>
+    <td class="mono sm">thaottp6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">8</td>
+    
+    <td class="c">17/09 15:02</td>
+    <td class="mono">854160141412</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422263285</b> — Luvum Slow Aging Phyto Collagen Gel Mask 33g <span class="qty">×3</span> <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp ướt dính nc dơ bb ướt team phụ”</div></div></td>
+    <td class="c">17/09 18:06</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">9</td>
+    
+    <td class="c">17/09 15:08</td>
+    <td class="mono">VTPVN9046859975</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422458630</b> — OAP GB MATTE LUMI CREAM 30ML EBT <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp mất seal chất dính hũ”</div></div></td>
+    <td class="c">17/09 18:10</td>
+    <td class="mono sm">thaottp6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">10</td>
+    
+    <td class="c">17/09 16:39</td>
+    <td class="mono">VTPVN9045148979</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422204576</b> — Chacott for Professionals Cleansing Water 500ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“rách tem phụ, bung seal, rò rỉ chất”</div></div></td>
+    <td class="c">23/09 16:00</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">11</td>
+    
+    <td class="c">18/09 10:32</td>
+    <td class="mono">854159324286</td>
+    <td>Camera không đủ ĐK</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422208974</b> — MB096124 CERAVE FOAMING CLEANSER 88ml (101167968) <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp mất seal chất dính miệng chai”</div></div></td>
+    <td class="c">19/09 09:22</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">12</td>
+    
+    <td class="c">18/09 14:07</td>
+    <td class="mono">854160012626</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422229664</b> — HAZELINE Sữa Tắm Sữa Chua Linh Lan 670g/8 <span class="tag dm">HƯ HỎNG</span><div class="skunote">“RR CHẤT DÍNH MIỆNG VÒI VÀ THÂN CHAI”</div></div></td>
+    <td class="c">20/09 15:51</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">13</td>
+    
+    <td class="c">19/09 14:11</td>
+    <td class="mono">VTPVN9045600586</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422204816</b> — DR BW Damage Hair (Pink_Y19) 120ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SẢN PHẨM BỊ DÍNH CHẤT ĐẦY CHAI”</div></div></td>
+    <td class="c">20/09 08:03</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">14</td>
+    
+    <td class="c">19/09 16:28</td>
+    <td class="mono">854160254456</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422464764</b> — LIFEBUOY SG COFFEE &amp; COCONUT 12X800G <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SP BỊ ĐỔ RA NGOÀI”</div></div></td>
+    <td class="c">20/09 15:58</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">15</td>
+    
+    <td class="c">19/09 16:43</td>
+    <td class="mono">854160139884</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422223263</b> — Beplain Sunmuse lai Vật Lý &amp; Hoá Học Nâng Tone &amp; Hiệu chỉnh da Matte SPF 50+ PA++++ 50mL <span class="tag dm">HƯ HỎNG</span><div class="skunote">“MÓP , NHĂN BAO BÌ”</div></div></td>
+    <td class="c">21/09 08:57</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr>
+  </tbody></table></div>
+
+<div class="note"><b>Ghi chú</b><ul><li><b>Đơn hoàn tiền ngay (không có hàng hoàn về kho) đã được loại khỏi báo cáo</b> theo quy ước: kỳ này <b>46 đơn</b> (Shopee 46: 28 thắng, 5 thua, 6 không cần KN, 7 đang xử lý). Kỳ so sánh loại 24 đơn cùng loại.</li><li><b>Đang xử lý:</b> còn 16 đơn (4,9% số đơn cần khiếu nại) — Chờ Vận hành KN lại 10, Đã khiếu nại 5, Đang chuẩn bị KN 1. Các đơn này chưa vào tỉ lệ.</li><li><b>12 đơn đang bị sàn xử <i>Vô lý (sàn vô lý)</i> nhưng chưa chốt</b> (Shopee 9 · TikTok 3) nên chưa vào tỉ lệ.</li><li><b>Không cần khiếu nại:</b> 134 đơn (Shopee 71 · TikTok 63) — không đưa vào tỉ lệ.</li><li><b>Số liệu đã thay đổi so với bản phát hành ngày 22/09:</b> khi đó là <b>271 đơn có KQ / 95,2% thành công</b>; tới 29/09/2026 09:07 là <b>311 đơn / 94,5%</b> vì có thêm đơn chốt kết quả sau ngày phát hành.</li><li><b>Hiệu chỉnh thủ công đã áp:</b> chuyển thành khiếu nại thành công (chốt kỳ 14–20/09): <code>SPXVN066940078879</code>, <code>SPXVN062561959759</code>, <code>VTPVN9048104371</code> · loại khỏi báo cáo (chốt kỳ 14–20/09): <code>VTPVN9049788772</code>, <code>854156802956</code>, <code>854157893809</code>, <code>VNGH80851688902</code>.</li><li><b>Người khiếu nại:</b> cột <code>Assigned To</code> của file export trống, và WMS không còn trả lịch sử gửi khiếu nại, nên cột này lấy <b>người theo dõi / chốt kết quả</b> của case (hoặc người tạo case nếu do nhân viên tạo tay).</li><li><b>SKU hư hỏng / không nhận</b> lấy từ phiên kiểm hàng trả, kèm nguyên văn ghi chú của nhân viên kiểm: 19 dòng — 16 HƯ HỎNG, 3 KHÔNG NHẬN.</li><li><b>Đơn đền bù một phần (tính thất bại):</b> TikTok <code>854159394184</code>, TikTok <code>854159543677</code>.</li></ul></div>
+<footer>Tạo tự động từ <code>Marketplace_Complaint_2026_09_29_09_07_1.xlsx</code> · Kỳ 14/09 – 20/09/2026 · Kho 170 Quốc Lộ 1A · Dữ liệu chốt 29/09/2026 09:07</footer>
+</section>
+<section class="period" id="p-tuan-07-09" data-p="tuan-07-09" hidden>
+<p class="sub">Kỳ báo cáo: <b>07/09 – 13/09/2026</b> · Kho 170 Quốc Lộ 1A · Sàn Shopee + TikTok</p>
+<div class="snap"><b>Số liệu cập nhật tới 29/09/2026 09:07.</b> Kỳ này còn <b>10 đơn (3,2%)</b> đang xử lý chưa có kết quả nên tỉ lệ còn có thể thay đổi khi các đơn này chốt. <b>Đã khác bản phát hành ngày 15/09</b> (230 đơn có KQ / 99,1%) — xem Ghi chú.</div>
+
+<h2>TỔNG – Cả 2 sàn</h2>
+<div class="kpis"><div class="kpi"><div class="kn">394</div><div class="kl">Đơn phát sinh trong kỳ</div><div class="ks">Shopee 210 · TikTok 184</div></div><div class="kpi"><div class="kn">299</div><div class="kl">Đơn đã có kết quả</div><div class="ks">Shopee 141 · TikTok 158</div></div><div class="kpi"><div class="kn">292</div><div class="kl">Khiếu nại thành công</div><div class="ks">97,7% trên đơn đã có KQ</div></div><div class="kpi bad"><div class="kn">7</div><div class="kl">Khiếu nại thất bại*</div><div class="ks">TB 3 + đền bù 1 phần 4</div></div></div>
+<div class="ratio">
+  <div class="rtitle">Tỉ lệ trên đơn đã có kết quả: <b>299</b> đơn</div>
+  <div class="rnums"><span class="big">97,7%</span><span class="lbl">thành công</span>
+   <span class="small">2,3%</span><span class="lbl red">thất bại</span></div>
+  <div class="bar"><span style="width:97.7%"></span><i style="width:2.3%"></i></div>
+  <div class="rsub">292 thành công · 7 thất bại (TB 3 + đền bù 1 phần 4) — không tính 10 đơn đang xử lý và 85 đơn không cần khiếu nại</div>
+  </div>
+<h3>So với tuần (31/08 – 06/09)</h3>
+<div class="cmps"><div class="cmp sp">
+   <div class="cmph">Shopee</div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (07/09–13/09)</span><span class="cmpv">100%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tuần trước (31/08–06/09)</span><span class="cmpv">98,7%</span></div>
+   <div class="cmpd up">▲ +1,3 điểm · thất bại 1 → 0 đơn</div>
+   <div class="cmpn">141 đơn có KQ (tuần trước 77)</div>
+  </div><div class="cmp tk">
+   <div class="cmph">TikTok</div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (07/09–13/09)</span><span class="cmpv">95,6%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tuần trước (31/08–06/09)</span><span class="cmpv">95,8%</span></div>
+   <div class="cmpd down">▼ -0,2 điểm · thất bại 6 → 7 đơn</div>
+   <div class="cmpn">158 đơn có KQ (tuần trước 142)</div>
+  </div></div>
+
+
+<h2>1 – Tổng hợp đơn thất bại cả 2 sàn</h2>
+<div class="fcauses"><div class="fcause"><div class="fn">1</div><div class="fl">Chưa chứng minh nguyên vẹn</div><div class="fm">Shopee 0 · TikTok 1</div></div><div class="fcause"><div class="fn">2</div><div class="fl">Vô lý (sàn vô lý)</div><div class="fm">Shopee 0 · TikTok 2</div></div><div class="fcause soft"><div class="fn">4</div><div class="fl">Đền bù 1 phần</div><div class="fm">Shopee 0 · TikTok 4</div></div></div>
+<div class="tw"><table class="tbl">
+  <thead><tr><th>#</th><th>Sàn</th><th>Ngày tạo</th><th>Mã vận đơn</th><th>Nguyên nhân</th><th>Kết quả</th><th>Vòng</th>
+  <th>SKU hư hỏng / không nhận</th><th>Ngày chốt KQ</th><th>Người khiếu nại</th></tr></thead><tbody>
+  <tr>
+    <td class="c">1</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">08/09 18:13</td>
+    <td class="mono">854158886785</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422201176</b> — Laura Anna Nước Hoa Diamond Femme ( Pink) 45ml  <span class="tag dm">HƯ HỎNG</span><div class="skunote">“BÓC SEAL NGOÀI”</div></div></td>
+    <td class="c">10/09 16:25</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">2</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">09/09 11:23</td>
+    <td class="mono">VTPVN9045988970</td>
+    <td>Vô lý (sàn vô lý)</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422417977</b> — Cleo Kem Tẩy Lông Da Nhạy Cảm 50g <span class="tag dm">HƯ HỎNG</span><div class="skunote">“Bung seal bạc hụt dung tích”</div></div></td>
+    <td class="c">15/09 13:32</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">3</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">09/09 11:29</td>
+    <td class="mono">VTPVN9046578869</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>200900037</b> — CETAPHIL Gentle Skin Cleanser 59ML <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“KH HOÀN SAI SP (chai SIMPLE 200ml)”</div></div></td>
+    <td class="c">15/09 13:43</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">4</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">09/09 17:46</td>
+    <td class="mono">854159710601</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>206400019</b> — Olay White Radiance Night Cream 50g  <span class="tag dm">HƯ HỎNG</span><div class="skunote">“móp bb”</div></div></td>
+    <td class="c">11/09 09:37</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">5</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">10/09 17:48</td>
+    <td class="mono">854158721379</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">2</td>
+    <td class="skucell"><div class="sku"><b>422204576</b> — Chacott for Professionals Cleansing Water 500ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“HƯ NẮP RÒ DT”</div></div></td>
+    <td class="c">22/09 08:38</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">6</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">13/09 15:31</td>
+    <td class="mono">854159081450</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422225747</b> — APERIRE Day Dream Cover Cushion 13g #01 Rose Petal <span class="tag dm">HƯ HỎNG</span><div class="skunote">“KH MỞ SEAL SP, BÔNG PHÁN DÍNH PHẤN”</div></div></td>
+    <td class="c">15/09 08:42</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">7</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">13/09 15:50</td>
+    <td class="mono">854159684130</td>
+    <td>Vô lý (sàn vô lý)</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422201504</b> — Cocoon Nước Tẩy Trang Bí Đao 500ml <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“K HOÀN”</div></div></td>
+    <td class="c">14/09 18:57</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr>
+  </tbody></table></div>
+
+<h2>2 – SHOPEE</h2>
+<div class="kpis"><div class="kpi"><div class="kn">141</div><div class="kl">Đơn đã có kết quả</div></div><div class="kpi"><div class="kn">141</div><div class="kl">Khiếu nại thành công</div><div class="ks">100%</div></div><div class="kpi bad"><div class="kn">0</div><div class="kl">Khiếu nại thất bại*</div><div class="ks">Không có đơn thất bại trong kỳ</div></div></div>
+<div class="ratio">
+  <div class="rtitle">Tỉ lệ trên đơn đã có kết quả: <b>141</b> đơn</div>
+  <div class="rnums"><span class="big">100%</span><span class="lbl">thành công</span>
+   <span class="small">0%</span><span class="lbl red">thất bại</span></div>
+  <div class="bar"><span style="width:100%"></span><i style="width:0%"></i></div>
+  <div class="rsub">141 thành công · 0 thất bại — không tính 8 đơn đang xử lý và 61 đơn không cần khiếu nại</div>
+  </div>
+<div class="cmps"><div class="cmp sp">
+   <div class="cmph">Shopee</div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (07/09–13/09)</span><span class="cmpv">100%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tuần trước (31/08–06/09)</span><span class="cmpv">98,7%</span></div>
+   <div class="cmpd up">▲ +1,3 điểm · thất bại 1 → 0 đơn</div>
+   <div class="cmpn">141 đơn có KQ (tuần trước 77)</div>
+  </div></div>
+<h3>Chi tiết đơn thất bại – Shopee</h3>
+<p class="empty">Không có đơn thất bại trong kỳ.</p>
+
+<h2>3 – TIKTOK</h2>
+<div class="kpis"><div class="kpi"><div class="kn">158</div><div class="kl">Đơn đã có kết quả</div></div><div class="kpi"><div class="kn">151</div><div class="kl">Khiếu nại thành công</div><div class="ks">95,6%</div></div><div class="kpi bad"><div class="kn">7</div><div class="kl">Khiếu nại thất bại*</div><div class="ks">TB 3 + đền bù 1 phần 4</div></div></div>
+<div class="ratio">
+  <div class="rtitle">Tỉ lệ trên đơn đã có kết quả: <b>158</b> đơn</div>
+  <div class="rnums"><span class="big">95,6%</span><span class="lbl">thành công</span>
+   <span class="small">4,4%</span><span class="lbl red">thất bại</span></div>
+  <div class="bar"><span style="width:95.6%"></span><i style="width:4.4%"></i></div>
+  <div class="rsub">151 thành công · 7 thất bại (TB 3 + đền bù 1 phần 4) — không tính 2 đơn đang xử lý và 24 đơn không cần khiếu nại</div>
+  </div>
+<div class="cmps"><div class="cmp tk">
+   <div class="cmph">TikTok</div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (07/09–13/09)</span><span class="cmpv">95,6%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tuần trước (31/08–06/09)</span><span class="cmpv">95,8%</span></div>
+   <div class="cmpd down">▼ -0,2 điểm · thất bại 6 → 7 đơn</div>
+   <div class="cmpn">158 đơn có KQ (tuần trước 142)</div>
+  </div></div>
+<h3>Chi tiết đơn thất bại – TikTok</h3>
+<div class="tw"><table class="tbl">
+  <thead><tr><th>#</th><th>Ngày tạo</th><th>Mã vận đơn</th><th>Nguyên nhân</th><th>Kết quả</th><th>Vòng</th>
+  <th>SKU hư hỏng / không nhận</th><th>Ngày chốt KQ</th><th>Người khiếu nại</th></tr></thead><tbody>
+  <tr>
+    <td class="c">1</td>
+    
+    <td class="c">08/09 18:13</td>
+    <td class="mono">854158886785</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422201176</b> — Laura Anna Nước Hoa Diamond Femme ( Pink) 45ml  <span class="tag dm">HƯ HỎNG</span><div class="skunote">“BÓC SEAL NGOÀI”</div></div></td>
+    <td class="c">10/09 16:25</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">2</td>
+    
+    <td class="c">09/09 11:23</td>
+    <td class="mono">VTPVN9045988970</td>
+    <td>Vô lý (sàn vô lý)</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422417977</b> — Cleo Kem Tẩy Lông Da Nhạy Cảm 50g <span class="tag dm">HƯ HỎNG</span><div class="skunote">“Bung seal bạc hụt dung tích”</div></div></td>
+    <td class="c">15/09 13:32</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">3</td>
+    
+    <td class="c">09/09 11:29</td>
+    <td class="mono">VTPVN9046578869</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>200900037</b> — CETAPHIL Gentle Skin Cleanser 59ML <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“KH HOÀN SAI SP (chai SIMPLE 200ml)”</div></div></td>
+    <td class="c">15/09 13:43</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">4</td>
+    
+    <td class="c">09/09 17:46</td>
+    <td class="mono">854159710601</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>206400019</b> — Olay White Radiance Night Cream 50g  <span class="tag dm">HƯ HỎNG</span><div class="skunote">“móp bb”</div></div></td>
+    <td class="c">11/09 09:37</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">5</td>
+    
+    <td class="c">10/09 17:48</td>
+    <td class="mono">854158721379</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">2</td>
+    <td class="skucell"><div class="sku"><b>422204576</b> — Chacott for Professionals Cleansing Water 500ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“HƯ NẮP RÒ DT”</div></div></td>
+    <td class="c">22/09 08:38</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">6</td>
+    
+    <td class="c">13/09 15:31</td>
+    <td class="mono">854159081450</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422225747</b> — APERIRE Day Dream Cover Cushion 13g #01 Rose Petal <span class="tag dm">HƯ HỎNG</span><div class="skunote">“KH MỞ SEAL SP, BÔNG PHÁN DÍNH PHẤN”</div></div></td>
+    <td class="c">15/09 08:42</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">7</td>
+    
+    <td class="c">13/09 15:50</td>
+    <td class="mono">854159684130</td>
+    <td>Vô lý (sàn vô lý)</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422201504</b> — Cocoon Nước Tẩy Trang Bí Đao 500ml <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“K HOÀN”</div></div></td>
+    <td class="c">14/09 18:57</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr>
+  </tbody></table></div>
+
+<div class="note"><b>Ghi chú</b><ul><li><b>Đơn hoàn tiền ngay (không có hàng hoàn về kho) đã được loại khỏi báo cáo</b> theo quy ước: kỳ này <b>24 đơn</b> (Shopee 24: 17 thắng, 3 thua, 3 không cần KN, 1 đang xử lý). Kỳ so sánh loại 29 đơn cùng loại.</li><li><b>Đang xử lý:</b> còn 10 đơn (3,2% số đơn cần khiếu nại) — Chờ Vận hành KN lại 8, Đã khiếu nại 2. Các đơn này chưa vào tỉ lệ.</li><li><b>9 đơn đang bị sàn xử <i>Vô lý (sàn vô lý)</i> nhưng chưa chốt</b> (Shopee 8 · TikTok 1) nên chưa vào tỉ lệ.</li><li><b>Không cần khiếu nại:</b> 85 đơn (Shopee 61 · TikTok 24) — không đưa vào tỉ lệ.</li><li><b>Số liệu đã thay đổi so với bản phát hành ngày 15/09:</b> khi đó là <b>230 đơn có KQ / 99,1% thành công</b>; tới 29/09/2026 09:07 là <b>299 đơn / 97,7%</b> vì có thêm đơn chốt kết quả sau ngày phát hành.</li><li>Kỳ này <b>không có hiệu chỉnh thủ công</b> nào theo từng mã đơn.</li><li><b>Người khiếu nại:</b> cột <code>Assigned To</code> của file export trống, và WMS không còn trả lịch sử gửi khiếu nại, nên cột này lấy <b>người theo dõi / chốt kết quả</b> của case (hoặc người tạo case nếu do nhân viên tạo tay).</li><li><b>SKU hư hỏng / không nhận</b> lấy từ phiên kiểm hàng trả, kèm nguyên văn ghi chú của nhân viên kiểm: 7 dòng — 5 HƯ HỎNG, 2 KHÔNG NHẬN.</li><li><b>Đơn đền bù một phần (tính thất bại):</b> TikTok <code>854158886785</code>, TikTok <code>VTPVN9046578869</code>, TikTok <code>854159710601</code>, TikTok <code>854159081450</code>.</li></ul></div>
+<footer>Tạo tự động từ <code>Marketplace_Complaint_2026_09_29_09_07_1.xlsx</code> · Kỳ 07/09 – 13/09/2026 · Kho 170 Quốc Lộ 1A · Dữ liệu chốt 29/09/2026 09:07</footer>
+</section>
+<section class="period" id="p-tuan-31-08" data-p="tuan-31-08" hidden>
+<p class="sub">Kỳ báo cáo: <b>31/08 – 06/09/2026</b> · Kho 170 Quốc Lộ 1A · Sàn Shopee + TikTok</p>
+<div class="snap"><b>Số liệu cập nhật tới 29/09/2026 09:07.</b> Kỳ này còn <b>9 đơn (3,9%)</b> đang xử lý chưa có kết quả nên tỉ lệ còn có thể thay đổi khi các đơn này chốt. <b>Đã khác bản phát hành ngày 07/09</b> (163 đơn có KQ / 96,9%) — xem Ghi chú.</div>
+
+<h2>TỔNG – Cả 2 sàn</h2>
+<div class="kpis"><div class="kpi"><div class="kn">315</div><div class="kl">Đơn phát sinh trong kỳ</div><div class="ks">Shopee 117 · TikTok 198</div></div><div class="kpi"><div class="kn">219</div><div class="kl">Đơn đã có kết quả</div><div class="ks">Shopee 77 · TikTok 142</div></div><div class="kpi"><div class="kn">212</div><div class="kl">Khiếu nại thành công</div><div class="ks">96,8% trên đơn đã có KQ</div></div><div class="kpi bad"><div class="kn">7</div><div class="kl">Khiếu nại thất bại*</div><div class="ks">TB 6 + đền bù 1 phần 1</div></div></div>
+<div class="ratio">
+  <div class="rtitle">Tỉ lệ trên đơn đã có kết quả: <b>219</b> đơn</div>
+  <div class="rnums"><span class="big">96,8%</span><span class="lbl">thành công</span>
+   <span class="small">3,2%</span><span class="lbl red">thất bại</span></div>
+  <div class="bar"><span style="width:96.8%"></span><i style="width:3.2%"></i></div>
+  <div class="rsub">212 thành công · 7 thất bại (TB 6 + đền bù 1 phần 1) — không tính 9 đơn đang xử lý và 87 đơn không cần khiếu nại</div>
+  </div>
+<h3>So với tuần (24/08 – 30/08)</h3>
+<div class="cmps"><div class="cmp sp">
+   <div class="cmph">Shopee</div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (31/08–06/09)</span><span class="cmpv">98,7%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tuần trước (24/08–30/08)</span><span class="cmpv">95,9%</span></div>
+   <div class="cmpd up">▲ +2,8 điểm · thất bại 4 → 1 đơn</div>
+   <div class="cmpn">77 đơn có KQ (tuần trước 98)</div>
+  </div><div class="cmp tk">
+   <div class="cmph">TikTok</div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (31/08–06/09)</span><span class="cmpv">95,8%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tuần trước (24/08–30/08)</span><span class="cmpv">95,5%</span></div>
+   <div class="cmpd up">▲ +0,3 điểm · thất bại 7 → 6 đơn</div>
+   <div class="cmpn">142 đơn có KQ (tuần trước 157)</div>
+  </div></div>
+
+
+<h2>1 – Tổng hợp đơn thất bại cả 2 sàn</h2>
+<div class="fcauses"><div class="fcause"><div class="fn">4</div><div class="fl">Chưa chứng minh nguyên vẹn</div><div class="fm">Shopee 1 · TikTok 3</div></div><div class="fcause"><div class="fn">2</div><div class="fl">ĐG sai quy cách</div><div class="fm">Shopee 0 · TikTok 2</div></div><div class="fcause soft"><div class="fn">1</div><div class="fl">Đền bù 1 phần</div><div class="fm">Shopee 0 · TikTok 1</div></div></div>
+<div class="tw"><table class="tbl">
+  <thead><tr><th>#</th><th>Sàn</th><th>Ngày tạo</th><th>Mã vận đơn</th><th>Nguyên nhân</th><th>Kết quả</th><th>Vòng</th>
+  <th>SKU hư hỏng / không nhận</th><th>Ngày chốt KQ</th><th>Người khiếu nại</th></tr></thead><tbody>
+  <tr>
+    <td class="c">1</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">31/08 17:49</td>
+    <td class="mono">854157258428</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>206200080</b> —  80102 KEM DUONG AM DA 60ML  <span class="tag dm">HƯ HỎNG</span><div class="skunote">“KHUI SEAL BẠC- ĐÃ DÙNG 1 LỖ NHỎ”</div></div></td>
+    <td class="c">03/09 16:16</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">2</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">01/09 15:11</td>
+    <td class="mono">854157136874</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422200236</b> — MARTIDERM THE ORIGINALS PROTEOS SCREEN SPF50+ FLUID CREAM <span class="tag dm">HƯ HỎNG</span><div class="skunote">“RÁCH BB- CHẤT DÍNH QUANH VÒI”</div></div></td>
+    <td class="c">08/09 06:40</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">3</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">01/09 15:15</td>
+    <td class="mono">854157806886</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>100750034</b> — VAC BP01 Bông Phấn Khô Tròn Vacosi (2 cái) <span class="tag dm">HƯ HỎNG</span><div class="skunote">“RÁCH SEAL, DÍNH BỤI TẠP CHẤT TRONG LỚP BÔNG”</div></div></td>
+    <td class="c">04/09 16:00</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">4</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">02/09 09:29</td>
+    <td class="mono">862282558058</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422458630</b> — OAP GB MATTE LUMI CREAM 30ML EBT <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SP BUNG ĐÁY SEAL HỤT 10% DT”</div></div></td>
+    <td class="c">07/09 18:15</td>
+    <td class="mono sm">hienpt2@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">5</td>
+    <td><span class="ch sp">Shopee</span></td>
+    <td class="c">03/09 15:56</td>
+    <td class="mono">SPXVN062823304538</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422216287</b> — Derladie Laboratoire Pore Tightening Ampoule Niacinamide 20% + Zic Pca 1% 30ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“BUNG BB- BAO BÌ NGOÀI DÍNH VÀNG”</div></div></td>
+    <td class="c">05/09 08:30</td>
+    <td class="mono sm">hienpt2@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">6</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">03/09 17:28</td>
+    <td class="mono">854157890459</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422222135</b> — Cocoon Nước Sen Hậu Giang 310ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“CHẤT CÓ MÙI LẠ - K NHỚT”</div></div><div class="sku"><b>422201504</b> — Cocoon Nước Tẩy Trang Bí Đao 500ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“CHẤT CÓ MÙI LẠ BỌT NHIỀU K NHỚT”</div></div></td>
+    <td class="c">05/09 09:22</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">7</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">04/09 16:10</td>
+    <td class="mono">VTPVN9040092167</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>358700002</b> — Caryophy Portulaca Toner 300ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“Bung seal ngoài móp bao bì”</div></div></td>
+    <td class="c">06/09 14:12</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr>
+  </tbody></table></div>
+
+<h2>2 – SHOPEE</h2>
+<div class="kpis"><div class="kpi"><div class="kn">77</div><div class="kl">Đơn đã có kết quả</div></div><div class="kpi"><div class="kn">76</div><div class="kl">Khiếu nại thành công</div><div class="ks">98,7%</div></div><div class="kpi bad"><div class="kn">1</div><div class="kl">Khiếu nại thất bại*</div><div class="ks">TB 1 + đền bù 1 phần 0</div></div></div>
+<div class="ratio">
+  <div class="rtitle">Tỉ lệ trên đơn đã có kết quả: <b>77</b> đơn</div>
+  <div class="rnums"><span class="big">98,7%</span><span class="lbl">thành công</span>
+   <span class="small">1,3%</span><span class="lbl red">thất bại</span></div>
+  <div class="bar"><span style="width:98.7%"></span><i style="width:1.3%"></i></div>
+  <div class="rsub">76 thành công · 1 thất bại — không tính 4 đơn đang xử lý và 36 đơn không cần khiếu nại</div>
+  </div>
+<div class="cmps"><div class="cmp sp">
+   <div class="cmph">Shopee</div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (31/08–06/09)</span><span class="cmpv">98,7%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tuần trước (24/08–30/08)</span><span class="cmpv">95,9%</span></div>
+   <div class="cmpd up">▲ +2,8 điểm · thất bại 4 → 1 đơn</div>
+   <div class="cmpn">77 đơn có KQ (tuần trước 98)</div>
+  </div></div>
+<h3>Chi tiết đơn thất bại – Shopee</h3>
+<div class="tw"><table class="tbl">
+  <thead><tr><th>#</th><th>Ngày tạo</th><th>Mã vận đơn</th><th>Nguyên nhân</th><th>Kết quả</th><th>Vòng</th>
+  <th>SKU hư hỏng / không nhận</th><th>Ngày chốt KQ</th><th>Người khiếu nại</th></tr></thead><tbody>
+  <tr>
+    <td class="c">1</td>
+    
+    <td class="c">03/09 15:56</td>
+    <td class="mono">SPXVN062823304538</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422216287</b> — Derladie Laboratoire Pore Tightening Ampoule Niacinamide 20% + Zic Pca 1% 30ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“BUNG BB- BAO BÌ NGOÀI DÍNH VÀNG”</div></div></td>
+    <td class="c">05/09 08:30</td>
+    <td class="mono sm">hienpt2@hasaki.vn</td>
+    </tr>
+  </tbody></table></div>
+
+<h2>3 – TIKTOK</h2>
+<div class="kpis"><div class="kpi"><div class="kn">142</div><div class="kl">Đơn đã có kết quả</div></div><div class="kpi"><div class="kn">136</div><div class="kl">Khiếu nại thành công</div><div class="ks">95,8%</div></div><div class="kpi bad"><div class="kn">6</div><div class="kl">Khiếu nại thất bại*</div><div class="ks">TB 5 + đền bù 1 phần 1</div></div></div>
+<div class="ratio">
+  <div class="rtitle">Tỉ lệ trên đơn đã có kết quả: <b>142</b> đơn</div>
+  <div class="rnums"><span class="big">95,8%</span><span class="lbl">thành công</span>
+   <span class="small">4,2%</span><span class="lbl red">thất bại</span></div>
+  <div class="bar"><span style="width:95.8%"></span><i style="width:4.2%"></i></div>
+  <div class="rsub">136 thành công · 6 thất bại (TB 5 + đền bù 1 phần 1) — không tính 5 đơn đang xử lý và 51 đơn không cần khiếu nại</div>
+  </div>
+<div class="cmps"><div class="cmp tk">
+   <div class="cmph">TikTok</div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (31/08–06/09)</span><span class="cmpv">95,8%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tuần trước (24/08–30/08)</span><span class="cmpv">95,5%</span></div>
+   <div class="cmpd up">▲ +0,3 điểm · thất bại 7 → 6 đơn</div>
+   <div class="cmpn">142 đơn có KQ (tuần trước 157)</div>
+  </div></div>
+<h3>Chi tiết đơn thất bại – TikTok</h3>
+<div class="tw"><table class="tbl">
+  <thead><tr><th>#</th><th>Ngày tạo</th><th>Mã vận đơn</th><th>Nguyên nhân</th><th>Kết quả</th><th>Vòng</th>
+  <th>SKU hư hỏng / không nhận</th><th>Ngày chốt KQ</th><th>Người khiếu nại</th></tr></thead><tbody>
+  <tr>
+    <td class="c">1</td>
+    
+    <td class="c">31/08 17:49</td>
+    <td class="mono">854157258428</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>206200080</b> —  80102 KEM DUONG AM DA 60ML  <span class="tag dm">HƯ HỎNG</span><div class="skunote">“KHUI SEAL BẠC- ĐÃ DÙNG 1 LỖ NHỎ”</div></div></td>
+    <td class="c">03/09 16:16</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">2</td>
+    
+    <td class="c">01/09 15:11</td>
+    <td class="mono">854157136874</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422200236</b> — MARTIDERM THE ORIGINALS PROTEOS SCREEN SPF50+ FLUID CREAM <span class="tag dm">HƯ HỎNG</span><div class="skunote">“RÁCH BB- CHẤT DÍNH QUANH VÒI”</div></div></td>
+    <td class="c">08/09 06:40</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">3</td>
+    
+    <td class="c">01/09 15:15</td>
+    <td class="mono">854157806886</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>100750034</b> — VAC BP01 Bông Phấn Khô Tròn Vacosi (2 cái) <span class="tag dm">HƯ HỎNG</span><div class="skunote">“RÁCH SEAL, DÍNH BỤI TẠP CHẤT TRONG LỚP BÔNG”</div></div></td>
+    <td class="c">04/09 16:00</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">4</td>
+    
+    <td class="c">02/09 09:29</td>
+    <td class="mono">862282558058</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422458630</b> — OAP GB MATTE LUMI CREAM 30ML EBT <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SP BUNG ĐÁY SEAL HỤT 10% DT”</div></div></td>
+    <td class="c">07/09 18:15</td>
+    <td class="mono sm">hienpt2@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">5</td>
+    
+    <td class="c">03/09 17:28</td>
+    <td class="mono">854157890459</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422222135</b> — Cocoon Nước Sen Hậu Giang 310ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“CHẤT CÓ MÙI LẠ - K NHỚT”</div></div><div class="sku"><b>422201504</b> — Cocoon Nước Tẩy Trang Bí Đao 500ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“CHẤT CÓ MÙI LẠ BỌT NHIỀU K NHỚT”</div></div></td>
+    <td class="c">05/09 09:22</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">6</td>
+    
+    <td class="c">04/09 16:10</td>
+    <td class="mono">VTPVN9040092167</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>358700002</b> — Caryophy Portulaca Toner 300ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“Bung seal ngoài móp bao bì”</div></div></td>
+    <td class="c">06/09 14:12</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr>
+  </tbody></table></div>
+
+<div class="note"><b>Ghi chú</b><ul><li><b>Đơn hoàn tiền ngay (không có hàng hoàn về kho) đã được loại khỏi báo cáo</b> theo quy ước: kỳ này <b>29 đơn</b> (Shopee 29: 21 thắng, 0 thua, 7 không cần KN, 1 đang xử lý). Kỳ so sánh loại 35 đơn cùng loại.</li><li><b>Đang xử lý:</b> còn 9 đơn (3,9% số đơn cần khiếu nại) — Đã khiếu nại 5, Chờ Vận hành KN lại 2, Đang chuẩn bị KN 2. Các đơn này chưa vào tỉ lệ.</li><li><b>7 đơn đang bị sàn xử <i>Vô lý (sàn vô lý)</i> nhưng chưa chốt</b> (Shopee 2 · TikTok 5) nên chưa vào tỉ lệ.</li><li><b>Không cần khiếu nại:</b> 87 đơn (Shopee 36 · TikTok 51) — không đưa vào tỉ lệ.</li><li><b>Số liệu đã thay đổi so với bản phát hành ngày 07/09:</b> khi đó là <b>163 đơn có KQ / 96,9% thành công</b> (bản đó chưa áp quy tắc loại đơn hoàn tiền ngay); tới 29/09/2026 09:07 là <b>219 đơn / 96,8%</b> vì có thêm đơn chốt kết quả sau ngày phát hành.</li><li>Kỳ này <b>không có hiệu chỉnh thủ công</b> nào theo từng mã đơn.</li><li><b>Người khiếu nại:</b> cột <code>Assigned To</code> của file export trống, và WMS không còn trả lịch sử gửi khiếu nại, nên cột này lấy <b>người theo dõi / chốt kết quả</b> của case (hoặc người tạo case nếu do nhân viên tạo tay).</li><li><b>SKU hư hỏng / không nhận</b> lấy từ phiên kiểm hàng trả, kèm nguyên văn ghi chú của nhân viên kiểm: 8 dòng — 8 HƯ HỎNG, 0 KHÔNG NHẬN.</li><li><b>Đơn đền bù một phần (tính thất bại):</b> TikTok <code>VTPVN9040092167</code>.</li></ul></div>
+<footer>Tạo tự động từ <code>Marketplace_Complaint_2026_09_29_09_07_1.xlsx</code> · Kỳ 31/08 – 06/09/2026 · Kho 170 Quốc Lộ 1A · Dữ liệu chốt 29/09/2026 09:07</footer>
+</section>
+<section class="period" id="p-thang-9" data-p="thang-9" hidden>
+<p class="sub">Tổng hợp: <b>Tháng 9/2026 (01/09 – 28/09)</b> · Kho 170 Quốc Lộ 1A · Sàn Shopee + TikTok</p>
+<div class="snap"><b>Tổng hợp tháng 9 — dữ liệu tới 29/09/2026 09:07</b> (đơn tạo tới ngày 28/09). Còn <b>150 đơn (13,0%)</b> đang xử lý, phần lớn thuộc 2 tuần cuối, nên tỉ lệ tháng còn thay đổi khi các đơn này chốt. So với tháng 8 tính trên cùng quy ước.</div>
+
+<h2>TỔNG – Cả 2 sàn</h2>
+<div class="kpis"><div class="kpi"><div class="kn">1685</div><div class="kl">Đơn phát sinh trong tháng</div><div class="ks">Shopee 865 · TikTok 820</div></div><div class="kpi"><div class="kn">1008</div><div class="kl">Đơn đã có kết quả</div><div class="ks">Shopee 505 · TikTok 503</div></div><div class="kpi"><div class="kn">971</div><div class="kl">Khiếu nại thành công</div><div class="ks">96,3% trên đơn đã có KQ</div></div><div class="kpi bad"><div class="kn">37</div><div class="kl">Khiếu nại thất bại*</div><div class="ks">TB 27 + đền bù 1 phần 10</div></div></div>
+<div class="ratio">
+  <div class="rtitle">Tỉ lệ trên đơn đã có kết quả: <b>1008</b> đơn</div>
+  <div class="rnums"><span class="big">96,3%</span><span class="lbl">thành công</span>
+   <span class="small">3,7%</span><span class="lbl red">thất bại</span></div>
+  <div class="bar"><span style="width:96.3%"></span><i style="width:3.7%"></i></div>
+  <div class="rsub">971 thành công · 37 thất bại (TB 27 + đền bù 1 phần 10) — không tính 150 đơn đang xử lý và 527 đơn không cần khiếu nại</div>
+  </div>
+<h3>So với tháng 8/2026</h3>
+<div class="cmps"><div class="cmp sp">
+   <div class="cmph">Shopee</div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (Tháng 9)</span><span class="cmpv">99%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tháng 8/2026</span><span class="cmpv">97,7%</span></div>
+   <div class="cmpd up">▲ +1,3 điểm · thất bại 14 → 5 đơn</div>
+   <div class="cmpn">505 đơn có KQ (tháng trước 616)</div>
+  </div><div class="cmp tk">
+   <div class="cmph">TikTok</div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (Tháng 9)</span><span class="cmpv">93,6%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tháng 8/2026</span><span class="cmpv">93%</span></div>
+   <div class="cmpd up">▲ +0,6 điểm · thất bại 46 → 32 đơn</div>
+   <div class="cmpn">503 đơn có KQ (tháng trước 653)</div>
+  </div></div>
+<h3>Theo từng tuần trong tháng</h3>
+  <div class="tw"><table class="tbl wk">
+  <thead><tr><th>Tuần</th><th class="n">Đơn phát sinh</th><th class="n">Shopee</th><th class="n">TikTok</th><th class="n">Có KQ</th><th class="n">Thành công</th><th class="n">Thất bại</th><th class="n">Tỉ lệ TC</th><th class="n">Đang xử lý</th></tr></thead>
+  <tbody><tr><td>01/09 – 06/09<div class="wnote">phần tháng 9 của tuần 31/08–06/09</div></td>
+      <td class="n">256</td><td class="n">91</td><td class="n">165</td>
+      <td class="n">176</td><td class="n">170</td><td class="n bad">6</td>
+      <td class="n"><b>96,6%</b></td><td class="n">5</td></tr><tr><td>07/09 – 13/09</td>
+      <td class="n">394</td><td class="n">210</td><td class="n">184</td>
+      <td class="n">299</td><td class="n">292</td><td class="n bad">7</td>
+      <td class="n"><b>97,7%</b></td><td class="n">10</td></tr><tr><td>14/09 – 20/09</td>
+      <td class="n">461</td><td class="n">251</td><td class="n">210</td>
+      <td class="n">311</td><td class="n">294</td><td class="n bad">17</td>
+      <td class="n"><b>94,5%</b></td><td class="n">16</td></tr><tr><td>21/09 – 27/09</td>
+      <td class="n">518</td><td class="n">292</td><td class="n">226</td>
+      <td class="n">213</td><td class="n">206</td><td class="n bad">7</td>
+      <td class="n"><b>96,7%</b></td><td class="n">81</td></tr><tr><td>28/09 – 30/09<div class="wnote">mới phát sinh, gần như chưa có kết quả</div></td>
+      <td class="n">56</td><td class="n">21</td><td class="n">35</td>
+      <td class="n">9</td><td class="n">9</td><td class="n bad">0</td>
+      <td class="n"><b>100%</b></td><td class="n">38</td></tr></tbody></table></div>
+
+<h2>1 – Tổng hợp đơn thất bại cả 2 sàn</h2>
+<div class="fcauses"><div class="fcause"><div class="fn">12</div><div class="fl">Chưa chứng minh nguyên vẹn</div><div class="fm">Shopee 3 · TikTok 9</div></div><div class="fcause"><div class="fn">2</div><div class="fl">Vô lý (sàn vô lý)</div><div class="fm">Shopee 0 · TikTok 2</div></div><div class="fcause"><div class="fn">11</div><div class="fl">ĐG sai quy cách</div><div class="fm">Shopee 1 · TikTok 10</div></div><div class="fcause"><div class="fn">2</div><div class="fl">Camera không đủ ĐK</div><div class="fm">Shopee 0 · TikTok 2</div></div><div class="fcause soft"><div class="fn">10</div><div class="fl">Đền bù 1 phần</div><div class="fm">Shopee 1 · TikTok 9</div></div></div>
+<div class="tw"><table class="tbl">
+  <thead><tr><th>#</th><th>Sàn</th><th>Ngày tạo</th><th>Mã vận đơn</th><th>Nguyên nhân</th><th>Kết quả</th><th>Vòng</th>
+  <th>SKU hư hỏng / không nhận</th><th>Ngày chốt KQ</th><th>Người khiếu nại</th></tr></thead><tbody>
+  <tr>
+    <td class="c">1</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">01/09 15:11</td>
+    <td class="mono">854157136874</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422200236</b> — MARTIDERM THE ORIGINALS PROTEOS SCREEN SPF50+ FLUID CREAM <span class="tag dm">HƯ HỎNG</span><div class="skunote">“RÁCH BB- CHẤT DÍNH QUANH VÒI”</div></div></td>
+    <td class="c">08/09 06:40</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">2</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">01/09 15:15</td>
+    <td class="mono">854157806886</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>100750034</b> — VAC BP01 Bông Phấn Khô Tròn Vacosi (2 cái) <span class="tag dm">HƯ HỎNG</span><div class="skunote">“RÁCH SEAL, DÍNH BỤI TẠP CHẤT TRONG LỚP BÔNG”</div></div></td>
+    <td class="c">04/09 16:00</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">3</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">02/09 09:29</td>
+    <td class="mono">862282558058</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422458630</b> — OAP GB MATTE LUMI CREAM 30ML EBT <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SP BUNG ĐÁY SEAL HỤT 10% DT”</div></div></td>
+    <td class="c">07/09 18:15</td>
+    <td class="mono sm">hienpt2@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">4</td>
+    <td><span class="ch sp">Shopee</span></td>
+    <td class="c">03/09 15:56</td>
+    <td class="mono">SPXVN062823304538</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422216287</b> — Derladie Laboratoire Pore Tightening Ampoule Niacinamide 20% + Zic Pca 1% 30ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“BUNG BB- BAO BÌ NGOÀI DÍNH VÀNG”</div></div></td>
+    <td class="c">05/09 08:30</td>
+    <td class="mono sm">hienpt2@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">5</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">03/09 17:28</td>
+    <td class="mono">854157890459</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422222135</b> — Cocoon Nước Sen Hậu Giang 310ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“CHẤT CÓ MÙI LẠ - K NHỚT”</div></div><div class="sku"><b>422201504</b> — Cocoon Nước Tẩy Trang Bí Đao 500ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“CHẤT CÓ MÙI LẠ BỌT NHIỀU K NHỚT”</div></div></td>
+    <td class="c">05/09 09:22</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">6</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">04/09 16:10</td>
+    <td class="mono">VTPVN9040092167</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>358700002</b> — Caryophy Portulaca Toner 300ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“Bung seal ngoài móp bao bì”</div></div></td>
+    <td class="c">06/09 14:12</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">7</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">08/09 18:13</td>
+    <td class="mono">854158886785</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422201176</b> — Laura Anna Nước Hoa Diamond Femme ( Pink) 45ml  <span class="tag dm">HƯ HỎNG</span><div class="skunote">“BÓC SEAL NGOÀI”</div></div></td>
+    <td class="c">10/09 16:25</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">8</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">09/09 11:23</td>
+    <td class="mono">VTPVN9045988970</td>
+    <td>Vô lý (sàn vô lý)</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422417977</b> — Cleo Kem Tẩy Lông Da Nhạy Cảm 50g <span class="tag dm">HƯ HỎNG</span><div class="skunote">“Bung seal bạc hụt dung tích”</div></div></td>
+    <td class="c">15/09 13:32</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">9</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">09/09 11:29</td>
+    <td class="mono">VTPVN9046578869</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>200900037</b> — CETAPHIL Gentle Skin Cleanser 59ML <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“KH HOÀN SAI SP (chai SIMPLE 200ml)”</div></div></td>
+    <td class="c">15/09 13:43</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">10</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">09/09 17:46</td>
+    <td class="mono">854159710601</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>206400019</b> — Olay White Radiance Night Cream 50g  <span class="tag dm">HƯ HỎNG</span><div class="skunote">“móp bb”</div></div></td>
+    <td class="c">11/09 09:37</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">11</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">10/09 17:48</td>
+    <td class="mono">854158721379</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">2</td>
+    <td class="skucell"><div class="sku"><b>422204576</b> — Chacott for Professionals Cleansing Water 500ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“HƯ NẮP RÒ DT”</div></div></td>
+    <td class="c">22/09 08:38</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">12</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">13/09 15:31</td>
+    <td class="mono">854159081450</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422225747</b> — APERIRE Day Dream Cover Cushion 13g #01 Rose Petal <span class="tag dm">HƯ HỎNG</span><div class="skunote">“KH MỞ SEAL SP, BÔNG PHÁN DÍNH PHẤN”</div></div></td>
+    <td class="c">15/09 08:42</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">13</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">13/09 15:50</td>
+    <td class="mono">854159684130</td>
+    <td>Vô lý (sàn vô lý)</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422201504</b> — Cocoon Nước Tẩy Trang Bí Đao 500ml <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“K HOÀN”</div></div></td>
+    <td class="c">14/09 18:57</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">14</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">14/09 17:54</td>
+    <td class="mono">854159952163</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>206200005</b> — 98412 SDT DT BAN DEM 350ML <span class="tag dm">HƯ HỎNG</span><div class="skunote">“ĐẦU VÒI DÍNH CHẤT , HAO HỤT DUNG TÍCH”</div></div></td>
+    <td class="c">15/09 20:12</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">15</td>
+    <td><span class="ch sp">Shopee</span></td>
+    <td class="c">15/09 14:04</td>
+    <td class="mono">SPXVN061458766249</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422226630</b> — AVENE CICALFATE+ REPAIRING CREAM 100ml <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“đóng gói đóng thiếu (Người đóng gói: tuyenhn@hasaki.vn)”</div></div></td>
+    <td class="c">16/09 15:42</td>
+    <td class="mono sm">thaottp6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">16</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">16/09 10:00</td>
+    <td class="mono">854159220572</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>200400004</b> — Bioderma - Nước tẩy trang Sebium H2O (Xanh lá) 500ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp mất seal bb dính tóc hh dt”</div></div></td>
+    <td class="c">17/09 09:51</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">17</td>
+    <td><span class="ch sp">Shopee</span></td>
+    <td class="c">16/09 14:04</td>
+    <td class="mono">SPXVN062374179199</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422480390</b> — Black Rouge Air Fit Velvet Lite A109 <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp mất seal”</div></div></td>
+    <td class="c">17/09 13:08</td>
+    <td class="mono sm">hienpt2@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">18</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">16/09 15:18</td>
+    <td class="mono">VTPVN9049017679</td>
+    <td>Camera không đủ ĐK</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>206200005</b> — 98412 SDT DT BAN DEM 350ML <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp dính vòi, hao hụt”</div></div></td>
+    <td class="c">17/09 20:23</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">19</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">16/09 17:18</td>
+    <td class="mono">854159394184</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422210339</b> — Cocoon Nước Dưỡng Tóc Tinh Dầu Bưởi 140ml (Phiên Bản Nâng Cấp) <span class="qty">×2</span> <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“hoàn thiếu”</div></div><div class="sku"><b>422210339</b> — Cocoon Nước Dưỡng Tóc Tinh Dầu Bưởi 140ml (Phiên Bản Nâng Cấp) <span class="qty">×18</span> <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SP RÁCH BAO BÌ”</div></div><div class="sku"><b>308100015</b> — Cocoon Dak Lak Coffee Body Polish 200ml <span class="qty">×7</span> <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“hoàn thiếu”</div></div></td>
+    <td class="c">22/09 14:57</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">20</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">16/09 18:42</td>
+    <td class="mono">VTPVN9042496376</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">2</td>
+    <td class="skucell"><div class="sku"><b>242300001</b> — ETIAXIL Detranspirant Traitement Roll-On 15ml -Peaux Sensibles (Nhãn Xanh Lá) <span class="tag dm">HƯ HỎNG</span><div class="skunote">“KH MỞ SEAL SP, mất bao bì, hao hụt”</div></div></td>
+    <td class="c">24/09 08:14</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">21</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">17/09 13:50</td>
+    <td class="mono">854159686184</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422203617</b> — EmbryolisseeLait Creme Concentre 75Ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp lủng hộp”</div></div></td>
+    <td class="c">22/09 13:22</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">22</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">17/09 14:36</td>
+    <td class="mono">854159543677</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422210339</b> — Cocoon Nước Dưỡng Tóc Tinh Dầu Bưởi 140ml (Phiên Bản Nâng Cấp) <span class="tag dm">HƯ HỎNG</span><div class="skunote">“móp bung đáy hộp bb dơ”</div></div></td>
+    <td class="c">17/09 18:04</td>
+    <td class="mono sm">thaottp6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">23</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">17/09 15:02</td>
+    <td class="mono">854160141412</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422263285</b> — Luvum Slow Aging Phyto Collagen Gel Mask 33g <span class="qty">×3</span> <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp ướt dính nc dơ bb ướt team phụ”</div></div></td>
+    <td class="c">17/09 18:06</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">24</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">17/09 15:08</td>
+    <td class="mono">VTPVN9046859975</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422458630</b> — OAP GB MATTE LUMI CREAM 30ML EBT <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp mất seal chất dính hũ”</div></div></td>
+    <td class="c">17/09 18:10</td>
+    <td class="mono sm">thaottp6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">25</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">17/09 16:39</td>
+    <td class="mono">VTPVN9045148979</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422204576</b> — Chacott for Professionals Cleansing Water 500ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“rách tem phụ, bung seal, rò rỉ chất”</div></div></td>
+    <td class="c">23/09 16:00</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">26</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">18/09 10:32</td>
+    <td class="mono">854159324286</td>
+    <td>Camera không đủ ĐK</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422208974</b> — MB096124 CERAVE FOAMING CLEANSER 88ml (101167968) <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp mất seal chất dính miệng chai”</div></div></td>
+    <td class="c">19/09 09:22</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">27</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">18/09 14:07</td>
+    <td class="mono">854160012626</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422229664</b> — HAZELINE Sữa Tắm Sữa Chua Linh Lan 670g/8 <span class="tag dm">HƯ HỎNG</span><div class="skunote">“RR CHẤT DÍNH MIỆNG VÒI VÀ THÂN CHAI”</div></div></td>
+    <td class="c">20/09 15:51</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">28</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">19/09 14:11</td>
+    <td class="mono">VTPVN9045600586</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422204816</b> — DR BW Damage Hair (Pink_Y19) 120ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SẢN PHẨM BỊ DÍNH CHẤT ĐẦY CHAI”</div></div></td>
+    <td class="c">20/09 08:03</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">29</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">19/09 16:28</td>
+    <td class="mono">854160254456</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422464764</b> — LIFEBUOY SG COFFEE &amp; COCONUT 12X800G <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SP BỊ ĐỔ RA NGOÀI”</div></div></td>
+    <td class="c">20/09 15:58</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">30</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">19/09 16:43</td>
+    <td class="mono">854160139884</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422223263</b> — Beplain Sunmuse lai Vật Lý &amp; Hoá Học Nâng Tone &amp; Hiệu chỉnh da Matte SPF 50+ PA++++ 50mL <span class="tag dm">HƯ HỎNG</span><div class="skunote">“MÓP , NHĂN BAO BÌ”</div></div></td>
+    <td class="c">21/09 08:57</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">31</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">21/09 14:44</td>
+    <td class="mono">854160031197</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>224200002</b> — Selsun 1% Selenium Sulfide Anti-Dandruff Shampoo 100ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SP RÁCH BAO BÌ”</div></div></td>
+    <td class="c">28/09 08:47</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">32</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">22/09 17:40</td>
+    <td class="mono">854161044511</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422201504</b> — Cocoon Nước Tẩy Trang Bí Đao 500ml <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“KH HOÀN SAI SP (nc sen 310ml)”</div></div></td>
+    <td class="c">29/09 08:45</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">33</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">25/09 11:39</td>
+    <td class="mono">854161004633</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>100540031</b> — Son dưỡng môi vaseline lip therapy rosy lips 7g <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SP RÁCH BAO BÌ”</div></div></td>
+    <td class="c">28/09 09:05</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">34</td>
+    <td><span class="ch sp">Shopee</span></td>
+    <td class="c">25/09 14:01</td>
+    <td class="mono">SPXVN066870657449</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422267068</b> — APERIRE Spa Relief Very Pretty Pore Mask 120g <span class="tag dm">HƯ HỎNG</span><div class="skunote">“mất cây lấy sp”</div></div></td>
+    <td class="c">26/09 16:05</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">35</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">25/09 14:54</td>
+    <td class="mono">VTPVN9046468186</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>209600021</b> — Dao cao Blue 2 Plus gói 2 <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“k hoàn sp”</div></div></td>
+    <td class="c">26/09 17:40</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">36</td>
+    <td><span class="ch sp">Shopee</span></td>
+    <td class="c">25/09 15:39</td>
+    <td class="mono">SPXVN068333129069</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422207325</b> — LIFEBUOY Sữa Tắm Trà Xanh Khổ Qua 800G/12 Chai <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“K HOÀN”</div></div></td>
+    <td class="c">27/09 10:00</td>
+    <td class="mono sm">thaottp6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">37</td>
+    <td><span class="ch tk">TikTok</span></td>
+    <td class="c">25/09 16:52</td>
+    <td class="mono">854161909557</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">2</td>
+    <td class="skucell"><div class="sku"><b>358700002</b> — Caryophy Portulaca Toner 300ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“móp hộp, seal bị dơ”</div></div></td>
+    <td class="c">27/09 06:51</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr>
+  </tbody></table></div>
+
+<h2>2 – SHOPEE</h2>
+<div class="kpis"><div class="kpi"><div class="kn">505</div><div class="kl">Đơn đã có kết quả</div></div><div class="kpi"><div class="kn">500</div><div class="kl">Khiếu nại thành công</div><div class="ks">99%</div></div><div class="kpi bad"><div class="kn">5</div><div class="kl">Khiếu nại thất bại*</div><div class="ks">TB 4 + đền bù 1 phần 1</div></div></div>
+<div class="ratio">
+  <div class="rtitle">Tỉ lệ trên đơn đã có kết quả: <b>505</b> đơn</div>
+  <div class="rnums"><span class="big">99%</span><span class="lbl">thành công</span>
+   <span class="small">1%</span><span class="lbl red">thất bại</span></div>
+  <div class="bar"><span style="width:99%"></span><i style="width:1%"></i></div>
+  <div class="rsub">500 thành công · 5 thất bại (TB 4 + đền bù 1 phần 1) — không tính 61 đơn đang xử lý và 299 đơn không cần khiếu nại</div>
+  </div>
+<div class="cmps"><div class="cmp sp">
+   <div class="cmph">Shopee</div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (Tháng 9)</span><span class="cmpv">99%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tháng 8/2026</span><span class="cmpv">97,7%</span></div>
+   <div class="cmpd up">▲ +1,3 điểm · thất bại 14 → 5 đơn</div>
+   <div class="cmpn">505 đơn có KQ (tháng trước 616)</div>
+  </div></div>
+<h3>Chi tiết đơn thất bại – Shopee</h3>
+<div class="tw"><table class="tbl">
+  <thead><tr><th>#</th><th>Ngày tạo</th><th>Mã vận đơn</th><th>Nguyên nhân</th><th>Kết quả</th><th>Vòng</th>
+  <th>SKU hư hỏng / không nhận</th><th>Ngày chốt KQ</th><th>Người khiếu nại</th></tr></thead><tbody>
+  <tr>
+    <td class="c">1</td>
+    
+    <td class="c">03/09 15:56</td>
+    <td class="mono">SPXVN062823304538</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422216287</b> — Derladie Laboratoire Pore Tightening Ampoule Niacinamide 20% + Zic Pca 1% 30ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“BUNG BB- BAO BÌ NGOÀI DÍNH VÀNG”</div></div></td>
+    <td class="c">05/09 08:30</td>
+    <td class="mono sm">hienpt2@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">2</td>
+    
+    <td class="c">15/09 14:04</td>
+    <td class="mono">SPXVN061458766249</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422226630</b> — AVENE CICALFATE+ REPAIRING CREAM 100ml <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“đóng gói đóng thiếu (Người đóng gói: tuyenhn@hasaki.vn)”</div></div></td>
+    <td class="c">16/09 15:42</td>
+    <td class="mono sm">thaottp6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">3</td>
+    
+    <td class="c">16/09 14:04</td>
+    <td class="mono">SPXVN062374179199</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422480390</b> — Black Rouge Air Fit Velvet Lite A109 <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp mất seal”</div></div></td>
+    <td class="c">17/09 13:08</td>
+    <td class="mono sm">hienpt2@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">4</td>
+    
+    <td class="c">25/09 14:01</td>
+    <td class="mono">SPXVN066870657449</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422267068</b> — APERIRE Spa Relief Very Pretty Pore Mask 120g <span class="tag dm">HƯ HỎNG</span><div class="skunote">“mất cây lấy sp”</div></div></td>
+    <td class="c">26/09 16:05</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">5</td>
+    
+    <td class="c">25/09 15:39</td>
+    <td class="mono">SPXVN068333129069</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422207325</b> — LIFEBUOY Sữa Tắm Trà Xanh Khổ Qua 800G/12 Chai <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“K HOÀN”</div></div></td>
+    <td class="c">27/09 10:00</td>
+    <td class="mono sm">thaottp6@hasaki.vn</td>
+    </tr>
+  </tbody></table></div>
+
+<h2>3 – TIKTOK</h2>
+<div class="kpis"><div class="kpi"><div class="kn">503</div><div class="kl">Đơn đã có kết quả</div></div><div class="kpi"><div class="kn">471</div><div class="kl">Khiếu nại thành công</div><div class="ks">93,6%</div></div><div class="kpi bad"><div class="kn">32</div><div class="kl">Khiếu nại thất bại*</div><div class="ks">TB 23 + đền bù 1 phần 9</div></div></div>
+<div class="ratio">
+  <div class="rtitle">Tỉ lệ trên đơn đã có kết quả: <b>503</b> đơn</div>
+  <div class="rnums"><span class="big">93,6%</span><span class="lbl">thành công</span>
+   <span class="small">6,4%</span><span class="lbl red">thất bại</span></div>
+  <div class="bar"><span style="width:93.6%"></span><i style="width:6.4%"></i></div>
+  <div class="rsub">471 thành công · 32 thất bại (TB 23 + đền bù 1 phần 9) — không tính 89 đơn đang xử lý và 228 đơn không cần khiếu nại</div>
+  </div>
+<div class="cmps"><div class="cmp tk">
+   <div class="cmph">TikTok</div>
+   <div class="cmprow"><span class="cmpk">Kỳ này (Tháng 9)</span><span class="cmpv">93,6%</span></div>
+   <div class="cmprow prev"><span class="cmpk">Tháng 8/2026</span><span class="cmpv">93%</span></div>
+   <div class="cmpd up">▲ +0,6 điểm · thất bại 46 → 32 đơn</div>
+   <div class="cmpn">503 đơn có KQ (tháng trước 653)</div>
+  </div></div>
+<h3>Chi tiết đơn thất bại – TikTok</h3>
+<div class="tw"><table class="tbl">
+  <thead><tr><th>#</th><th>Ngày tạo</th><th>Mã vận đơn</th><th>Nguyên nhân</th><th>Kết quả</th><th>Vòng</th>
+  <th>SKU hư hỏng / không nhận</th><th>Ngày chốt KQ</th><th>Người khiếu nại</th></tr></thead><tbody>
+  <tr>
+    <td class="c">1</td>
+    
+    <td class="c">01/09 15:11</td>
+    <td class="mono">854157136874</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422200236</b> — MARTIDERM THE ORIGINALS PROTEOS SCREEN SPF50+ FLUID CREAM <span class="tag dm">HƯ HỎNG</span><div class="skunote">“RÁCH BB- CHẤT DÍNH QUANH VÒI”</div></div></td>
+    <td class="c">08/09 06:40</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">2</td>
+    
+    <td class="c">01/09 15:15</td>
+    <td class="mono">854157806886</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>100750034</b> — VAC BP01 Bông Phấn Khô Tròn Vacosi (2 cái) <span class="tag dm">HƯ HỎNG</span><div class="skunote">“RÁCH SEAL, DÍNH BỤI TẠP CHẤT TRONG LỚP BÔNG”</div></div></td>
+    <td class="c">04/09 16:00</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">3</td>
+    
+    <td class="c">02/09 09:29</td>
+    <td class="mono">862282558058</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422458630</b> — OAP GB MATTE LUMI CREAM 30ML EBT <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SP BUNG ĐÁY SEAL HỤT 10% DT”</div></div></td>
+    <td class="c">07/09 18:15</td>
+    <td class="mono sm">hienpt2@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">4</td>
+    
+    <td class="c">03/09 17:28</td>
+    <td class="mono">854157890459</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422222135</b> — Cocoon Nước Sen Hậu Giang 310ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“CHẤT CÓ MÙI LẠ - K NHỚT”</div></div><div class="sku"><b>422201504</b> — Cocoon Nước Tẩy Trang Bí Đao 500ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“CHẤT CÓ MÙI LẠ BỌT NHIỀU K NHỚT”</div></div></td>
+    <td class="c">05/09 09:22</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">5</td>
+    
+    <td class="c">04/09 16:10</td>
+    <td class="mono">VTPVN9040092167</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>358700002</b> — Caryophy Portulaca Toner 300ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“Bung seal ngoài móp bao bì”</div></div></td>
+    <td class="c">06/09 14:12</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">6</td>
+    
+    <td class="c">08/09 18:13</td>
+    <td class="mono">854158886785</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422201176</b> — Laura Anna Nước Hoa Diamond Femme ( Pink) 45ml  <span class="tag dm">HƯ HỎNG</span><div class="skunote">“BÓC SEAL NGOÀI”</div></div></td>
+    <td class="c">10/09 16:25</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">7</td>
+    
+    <td class="c">09/09 11:23</td>
+    <td class="mono">VTPVN9045988970</td>
+    <td>Vô lý (sàn vô lý)</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422417977</b> — Cleo Kem Tẩy Lông Da Nhạy Cảm 50g <span class="tag dm">HƯ HỎNG</span><div class="skunote">“Bung seal bạc hụt dung tích”</div></div></td>
+    <td class="c">15/09 13:32</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">8</td>
+    
+    <td class="c">09/09 11:29</td>
+    <td class="mono">VTPVN9046578869</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>200900037</b> — CETAPHIL Gentle Skin Cleanser 59ML <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“KH HOÀN SAI SP (chai SIMPLE 200ml)”</div></div></td>
+    <td class="c">15/09 13:43</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">9</td>
+    
+    <td class="c">09/09 17:46</td>
+    <td class="mono">854159710601</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>206400019</b> — Olay White Radiance Night Cream 50g  <span class="tag dm">HƯ HỎNG</span><div class="skunote">“móp bb”</div></div></td>
+    <td class="c">11/09 09:37</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">10</td>
+    
+    <td class="c">10/09 17:48</td>
+    <td class="mono">854158721379</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">2</td>
+    <td class="skucell"><div class="sku"><b>422204576</b> — Chacott for Professionals Cleansing Water 500ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“HƯ NẮP RÒ DT”</div></div></td>
+    <td class="c">22/09 08:38</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">11</td>
+    
+    <td class="c">13/09 15:31</td>
+    <td class="mono">854159081450</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422225747</b> — APERIRE Day Dream Cover Cushion 13g #01 Rose Petal <span class="tag dm">HƯ HỎNG</span><div class="skunote">“KH MỞ SEAL SP, BÔNG PHÁN DÍNH PHẤN”</div></div></td>
+    <td class="c">15/09 08:42</td>
+    <td class="mono sm">hamlx@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">12</td>
+    
+    <td class="c">13/09 15:50</td>
+    <td class="mono">854159684130</td>
+    <td>Vô lý (sàn vô lý)</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422201504</b> — Cocoon Nước Tẩy Trang Bí Đao 500ml <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“K HOÀN”</div></div></td>
+    <td class="c">14/09 18:57</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">13</td>
+    
+    <td class="c">14/09 17:54</td>
+    <td class="mono">854159952163</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>206200005</b> — 98412 SDT DT BAN DEM 350ML <span class="tag dm">HƯ HỎNG</span><div class="skunote">“ĐẦU VÒI DÍNH CHẤT , HAO HỤT DUNG TÍCH”</div></div></td>
+    <td class="c">15/09 20:12</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">14</td>
+    
+    <td class="c">16/09 10:00</td>
+    <td class="mono">854159220572</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>200400004</b> — Bioderma - Nước tẩy trang Sebium H2O (Xanh lá) 500ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp mất seal bb dính tóc hh dt”</div></div></td>
+    <td class="c">17/09 09:51</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">15</td>
+    
+    <td class="c">16/09 15:18</td>
+    <td class="mono">VTPVN9049017679</td>
+    <td>Camera không đủ ĐK</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>206200005</b> — 98412 SDT DT BAN DEM 350ML <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp dính vòi, hao hụt”</div></div></td>
+    <td class="c">17/09 20:23</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">16</td>
+    
+    <td class="c">16/09 17:18</td>
+    <td class="mono">854159394184</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422210339</b> — Cocoon Nước Dưỡng Tóc Tinh Dầu Bưởi 140ml (Phiên Bản Nâng Cấp) <span class="qty">×2</span> <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“hoàn thiếu”</div></div><div class="sku"><b>422210339</b> — Cocoon Nước Dưỡng Tóc Tinh Dầu Bưởi 140ml (Phiên Bản Nâng Cấp) <span class="qty">×18</span> <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SP RÁCH BAO BÌ”</div></div><div class="sku"><b>308100015</b> — Cocoon Dak Lak Coffee Body Polish 200ml <span class="qty">×7</span> <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“hoàn thiếu”</div></div></td>
+    <td class="c">22/09 14:57</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">17</td>
+    
+    <td class="c">16/09 18:42</td>
+    <td class="mono">VTPVN9042496376</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">2</td>
+    <td class="skucell"><div class="sku"><b>242300001</b> — ETIAXIL Detranspirant Traitement Roll-On 15ml -Peaux Sensibles (Nhãn Xanh Lá) <span class="tag dm">HƯ HỎNG</span><div class="skunote">“KH MỞ SEAL SP, mất bao bì, hao hụt”</div></div></td>
+    <td class="c">24/09 08:14</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">18</td>
+    
+    <td class="c">17/09 13:50</td>
+    <td class="mono">854159686184</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422203617</b> — EmbryolisseeLait Creme Concentre 75Ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp lủng hộp”</div></div></td>
+    <td class="c">22/09 13:22</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">19</td>
+    
+    <td class="c">17/09 14:36</td>
+    <td class="mono">854159543677</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422210339</b> — Cocoon Nước Dưỡng Tóc Tinh Dầu Bưởi 140ml (Phiên Bản Nâng Cấp) <span class="tag dm">HƯ HỎNG</span><div class="skunote">“móp bung đáy hộp bb dơ”</div></div></td>
+    <td class="c">17/09 18:04</td>
+    <td class="mono sm">thaottp6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">20</td>
+    
+    <td class="c">17/09 15:02</td>
+    <td class="mono">854160141412</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422263285</b> — Luvum Slow Aging Phyto Collagen Gel Mask 33g <span class="qty">×3</span> <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp ướt dính nc dơ bb ướt team phụ”</div></div></td>
+    <td class="c">17/09 18:06</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">21</td>
+    
+    <td class="c">17/09 15:08</td>
+    <td class="mono">VTPVN9046859975</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422458630</b> — OAP GB MATTE LUMI CREAM 30ML EBT <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp mất seal chất dính hũ”</div></div></td>
+    <td class="c">17/09 18:10</td>
+    <td class="mono sm">thaottp6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">22</td>
+    
+    <td class="c">17/09 16:39</td>
+    <td class="mono">VTPVN9045148979</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422204576</b> — Chacott for Professionals Cleansing Water 500ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“rách tem phụ, bung seal, rò rỉ chất”</div></div></td>
+    <td class="c">23/09 16:00</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">23</td>
+    
+    <td class="c">18/09 10:32</td>
+    <td class="mono">854159324286</td>
+    <td>Camera không đủ ĐK</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422208974</b> — MB096124 CERAVE FOAMING CLEANSER 88ml (101167968) <span class="tag dm">HƯ HỎNG</span><div class="skunote">“sp mất seal chất dính miệng chai”</div></div></td>
+    <td class="c">19/09 09:22</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">24</td>
+    
+    <td class="c">18/09 14:07</td>
+    <td class="mono">854160012626</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422229664</b> — HAZELINE Sữa Tắm Sữa Chua Linh Lan 670g/8 <span class="tag dm">HƯ HỎNG</span><div class="skunote">“RR CHẤT DÍNH MIỆNG VÒI VÀ THÂN CHAI”</div></div></td>
+    <td class="c">20/09 15:51</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">25</td>
+    
+    <td class="c">19/09 14:11</td>
+    <td class="mono">VTPVN9045600586</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422204816</b> — DR BW Damage Hair (Pink_Y19) 120ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SẢN PHẨM BỊ DÍNH CHẤT ĐẦY CHAI”</div></div></td>
+    <td class="c">20/09 08:03</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">26</td>
+    
+    <td class="c">19/09 16:28</td>
+    <td class="mono">854160254456</td>
+    <td>ĐG sai quy cách</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422464764</b> — LIFEBUOY SG COFFEE &amp; COCONUT 12X800G <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SP BỊ ĐỔ RA NGOÀI”</div></div></td>
+    <td class="c">20/09 15:58</td>
+    <td class="mono sm">nhipty3@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">27</td>
+    
+    <td class="c">19/09 16:43</td>
+    <td class="mono">854160139884</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422223263</b> — Beplain Sunmuse lai Vật Lý &amp; Hoá Học Nâng Tone &amp; Hiệu chỉnh da Matte SPF 50+ PA++++ 50mL <span class="tag dm">HƯ HỎNG</span><div class="skunote">“MÓP , NHĂN BAO BÌ”</div></div></td>
+    <td class="c">21/09 08:57</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">28</td>
+    
+    <td class="c">21/09 14:44</td>
+    <td class="mono">854160031197</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>224200002</b> — Selsun 1% Selenium Sulfide Anti-Dandruff Shampoo 100ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SP RÁCH BAO BÌ”</div></div></td>
+    <td class="c">28/09 08:47</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">29</td>
+    
+    <td class="c">22/09 17:40</td>
+    <td class="mono">854161044511</td>
+    <td><span class="dash">—</span></td>
+    <td class="c"><span class="badge soft">Đền bù 1 phần</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>422201504</b> — Cocoon Nước Tẩy Trang Bí Đao 500ml <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“KH HOÀN SAI SP (nc sen 310ml)”</div></div></td>
+    <td class="c">29/09 08:45</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">30</td>
+    
+    <td class="c">25/09 11:39</td>
+    <td class="mono">854161004633</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>100540031</b> — Son dưỡng môi vaseline lip therapy rosy lips 7g <span class="tag dm">HƯ HỎNG</span><div class="skunote">“SP RÁCH BAO BÌ”</div></div></td>
+    <td class="c">28/09 09:05</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">31</td>
+    
+    <td class="c">25/09 14:54</td>
+    <td class="mono">VTPVN9046468186</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">1</td>
+    <td class="skucell"><div class="sku"><b>209600021</b> — Dao cao Blue 2 Plus gói 2 <span class="tag nr">KHÔNG NHẬN</span><div class="skunote">“k hoàn sp”</div></div></td>
+    <td class="c">26/09 17:40</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr><tr>
+    <td class="c">32</td>
+    
+    <td class="c">25/09 16:52</td>
+    <td class="mono">854161909557</td>
+    <td>Chưa chứng minh nguyên vẹn</td>
+    <td class="c"><span class="badge bad">Thất bại</span></td>
+    <td class="c">2</td>
+    <td class="skucell"><div class="sku"><b>358700002</b> — Caryophy Portulaca Toner 300ml <span class="tag dm">HƯ HỎNG</span><div class="skunote">“móp hộp, seal bị dơ”</div></div></td>
+    <td class="c">27/09 06:51</td>
+    <td class="mono sm">thaolt6@hasaki.vn</td>
+    </tr>
+  </tbody></table></div>
+
+<div class="note"><b>Ghi chú</b><ul><li><b>Đơn hoàn tiền ngay (không có hàng hoàn về kho) đã được loại khỏi báo cáo</b> theo quy ước: kỳ này <b>118 đơn</b> (Shopee 118: 72 thắng, 14 thua, 21 không cần KN, 11 đang xử lý). Kỳ so sánh loại 93 đơn cùng loại.</li><li><b>Đang xử lý:</b> còn 150 đơn (13,0% số đơn cần khiếu nại) — Đã khiếu nại 69, Chờ Vận hành KN lại 40, Chưa khiếu nại 20, Đã đóng hàng trả 10, Chờ mã VĐ trả hàng 5, Chờ đóng hàng trả 3, Đang chuẩn bị KN 2, Cần bổ sung bằng chứng 1. Các đơn này chưa vào tỉ lệ.</li><li><b>46 đơn đang bị sàn xử <i>Vô lý (sàn vô lý)</i> nhưng chưa chốt</b> (Shopee 39 · TikTok 7) nên chưa vào tỉ lệ.</li><li><b>Không cần khiếu nại:</b> 527 đơn (Shopee 299 · TikTok 228) — không đưa vào tỉ lệ.</li><li><b>Hiệu chỉnh thủ công đã áp:</b> chuyển thành khiếu nại thành công (chốt kỳ 14–20/09): <code>SPXVN066940078879</code>, <code>SPXVN062561959759</code>, <code>VTPVN9048104371</code> · loại khỏi báo cáo (chốt kỳ 14–20/09): <code>VTPVN9049788772</code>, <code>854156802956</code>, <code>854157893809</code>, <code>VNGH80851688902</code>.</li><li><b>Người khiếu nại:</b> cột <code>Assigned To</code> của file export trống, và WMS không còn trả lịch sử gửi khiếu nại, nên cột này lấy <b>người theo dõi / chốt kết quả</b> của case (hoặc người tạo case nếu do nhân viên tạo tay).</li><li><b>SKU hư hỏng / không nhận</b> lấy từ phiên kiểm hàng trả, kèm nguyên văn ghi chú của nhân viên kiểm: 40 dòng — 32 HƯ HỎNG, 8 KHÔNG NHẬN.</li><li><b>Đơn đền bù một phần (tính thất bại):</b> TikTok <code>VTPVN9040092167</code>, TikTok <code>854158886785</code>, TikTok <code>VTPVN9046578869</code>, TikTok <code>854159710601</code>, TikTok <code>854159081450</code>, TikTok <code>854159394184</code>, TikTok <code>854159543677</code>, TikTok <code>854160031197</code>, TikTok <code>854161044511</code>, Shopee <code>SPXVN068333129069</code>.</li></ul></div>
+<footer>Tạo tự động từ <code>Marketplace_Complaint_2026_09_29_09_07_1.xlsx</code> · Tháng 9/2026 · Kho 170 Quốc Lộ 1A · Dữ liệu chốt 29/09/2026 09:07</footer>
+</section>
 </div>
+</div>
+<script>
+(function(){
+  var ids=["tuan-21-09","tuan-14-09","tuan-07-09","tuan-31-08","thang-9"];
+  function show(id){
+    if(ids.indexOf(id)<0) id='tuan-21-09';
+    document.querySelectorAll('section.period').forEach(function(s){s.hidden=s.getAttribute('data-p')!==id;});
+    document.querySelectorAll('.pbtn').forEach(function(b){var on=b.getAttribute('data-p')===id;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on);});
+  }
+  document.querySelectorAll('.pbtn').forEach(function(b){b.addEventListener('click',function(){var id=b.getAttribute('data-p');show(id);try{history.replaceState(null,'','#'+id);}catch(e){location.hash=id;}window.scrollTo(0,0);});});
+  show((location.hash||'').slice(1));
+  window.addEventListener('hashchange',function(){show((location.hash||'').slice(1));});
+})();
+</script>
 </body>
 </html>
